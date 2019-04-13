@@ -2,80 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d868cf8d-be79-4cf6-b3d6-3b63b9e93c28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/1MBiomedica.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/rqst.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/bootstrap-responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/dynamictable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/glyphicons-halflings-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/img/glyphicons-halflings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/animated-overlay.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_flat_30_cccccc_40x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_flat_50_5c5c5c_40x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_gloss-wave_45_817865_500x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_gloss-wave_70_ffdd57_500x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_gloss-wave_90_fff9e5_500x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_highlight-soft_100_feeebd_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-bg_inset-soft_30_ffffff_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-icons_3d3d3d_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-icons_bd7b00_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-icons_d19405_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-icons_eb990f_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-icons_ed9f26_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-icons_fadc7a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/images/ui-icons_ffe180_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/jquery-ui-1.10.2.custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/sunny/jquery-ui-1.10.2.custom.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/00_create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/01_init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/modelo_db_marcazeta.mwb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/modelo_db_marcazeta.mwb.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cabezote.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logoS24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/SessionData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/generic_footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/generic_head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/generic_header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/generic_navbar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/generic_script.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/generic_validate_session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/class.phpmailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/class.pop3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/class.smtp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/test/contents.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/test/phpmailerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/test/test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/test/test_callback.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/phpmailer/test/testemail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/clientes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery/jquery-1.9.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery/jquery-dataTables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery/jquery-ui-1.10.2.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery/jquery-ui-calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/data-md5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/data-sha1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/lib/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/usuario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ConectionDb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ControllerCustomer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ControllerUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Util.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/01_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/01_init.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,8 +11,82 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/app.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap/bootstrap-responsive.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/generic_footer.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/generic_head.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/clientes.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/usuario.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/00_create.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="119" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/amide_db.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/01_init.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ConectionDb.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/db/00_create.sql" />
+        <option value="$PROJECT_DIR$/db/01_init.sql" />
+      </list>
+    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -118,42 +120,17 @@
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
               <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
               <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="sunny" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="sunny" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
               <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,24 +172,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555121949653</updated>
-      <workItem from="1555121955429" duration="239000" />
+      <workItem from="1555121955429" duration="1132000" />
+      <workItem from="1555184898749" duration="7943000" />
+      <workItem from="1555196766985" duration="1260000" />
     </task>
+    <task id="LOCAL-00001" summary="Ingreso de la plantilla">
+      <created>1555122398857</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555122398857</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ya fue creada la base de datos en MYSQL">
+      <created>1555187658462</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555187658462</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Corrección">
+      <created>1555195725310</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555195725310</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Se eliminó una columna y se ingresó el usuario de prueba a la base de datos">
+      <created>1555195773008</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555195773008</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239000" />
+    <option name="totallyTimeSpent" value="10335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -220,13 +224,95 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ingreso de la plantilla" />
+    <MESSAGE value="Ya fue creada la base de datos en MYSQL" />
+    <MESSAGE value="Corrección" />
+    <MESSAGE value="Se eliminó una columna y se ingresó el usuario de prueba a la base de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se eliminó una columna y se ingresó el usuario de prueba a la base de datos" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1785" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-bg_flat_50_5c5c5c_40x100.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sunny/images/animated-overlay.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-icons_ffe180_256x240.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-icons_ed9f26_256x240.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/sunny/jquery-ui-1.10.2.custom.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/generic_footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/generic_head.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/clientes.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/usuario.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/amide_db.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ConectionDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/00_create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="119" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/01_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

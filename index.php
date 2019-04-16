@@ -36,7 +36,7 @@ if (isset($_SESSION['usuario'])) {
         <header>
 	    <?php
 	    include 'include/generic_header.php';
-	    ?>
+        ?>
         </header>
 	<section id="section_wrap">
 	    <form class="form-actions" style="margin: 0 auto !important; width: 220px;" action="index.php" method="POST">

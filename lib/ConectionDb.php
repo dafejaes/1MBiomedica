@@ -15,9 +15,9 @@ class ConectionDb {
      */
     public function __construct() {
 	$this->host = "localhost";
-	$this->pass = "root";
+	$this->pass = "";
 	$this->user = "root";
-	$this->db = "dmt_db";
+	$this->db = "biomedica1m_db";
 	//Este es el timestamp que se debe ingresar, de acuerdo a la hora deseada
 	$this->server_date = 'DATE_ADD(NOW(),INTERVAL 1 HOUR)';
 	$this->connection = NULL;

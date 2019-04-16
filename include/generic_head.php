@@ -2,10 +2,10 @@
 <!-- Optimized mobile viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!--Fin Optimized mobile viewport -->
-<META NAME="Author" CONTENT="www.secuencia24.com"/>
-<title>Administrador de Información :: Secuencia24</title>
+<META NAME="Author" CONTENT="www.1MBiomedica.com"/>
+<title>Administrador de Información :: 1MBiomedica</title>
 <!--styles-->
-<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="images/cabezote.jpg" />
 <link rel="stylesheet" type="text/css" href="css/app.css" />
 <link rel="stylesheet" type="text/css" href="css/global.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />

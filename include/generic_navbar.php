@@ -4,19 +4,21 @@
 <div class="navbar">
     <div class="navbar-inner">
         <ul class="nav">
-	    <?php 
-	    if($SESSION_DATA->getPermission(1)){
-	    ?>
-            <li <?php if ($_ACTIVE_SIDEBAR == "clientes") echo 'class="active"'; ?>><a href="clientes.php">Clientes</a></li>
-            <li class="divider-vertical"></li>
-	    <?php 
-	    }
-	    if($SESSION_DATA->getPermission(5)){
-	    ?>
-            <li <?php if ($_ACTIVE_SIDEBAR == "usuario") echo 'class="active"'; ?>><a href="usuario.php">Usuarios</a></li>
-            <li class="divider-vertical"></li>
-	    <?php 
-	    }
+	    <?php
+        if (isset($_SESSION['usuario'])) {
+            if($SESSION_DATA->getPermission(1)){
+                ?>
+                <li <?php if ($_ACTIVE_SIDEBAR == "clientes") echo 'class="active"'; ?>><a href="clientes.php">Clientes</a></li>
+                <li class="divider-vertical"></li>
+                <?php
+            }
+            if($SESSION_DATA->getPermission(5)){
+                ?>
+                <li <?php if ($_ACTIVE_SIDEBAR == "usuario") echo 'class="active"'; ?>><a href="usuario.php">Usuarios</a></li>
+                <li class="divider-vertical"></li>
+                <?php
+            }
+        }
 	    ?>
             
         </ul>

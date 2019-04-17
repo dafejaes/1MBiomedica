@@ -5,8 +5,18 @@
                 <img src="images/cabezote.jpg" width="90px" alt="1mbiomedica"/>
             </td>
             <td bgcolor="#add8e6" align="right">
-                <img src="images/cabezote.jpg" width="50px" alt="1mbiomedica"/>
-                Iniciar sesión
+                <?php
+                if (isset($_SESSION['usuario'])){
+
+                }
+                else {
+                    ?>
+                    <img src="images/64572.png" width="50px" alt="FueraDeSesion"/>
+                    <a href="#" id="iniciosesion" class="btn btn-info botoncrear">Iniciar Sesión</a>
+                <?php
+                }
+                ?>
+
             </td>
         </tr>
         <tr>

@@ -4,6 +4,7 @@
     <list default="true" id="d868cf8d-be79-4cf6-b3d6-3b63b9e93c28" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/generic_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/generic_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+            <state relative-caret-position="1020">
+              <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#form#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clientes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="731">
               <caret line="43" column="83" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="83" />
             </state>
           </provider>
@@ -72,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/generic_header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="-663">
+              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -113,8 +117,8 @@
         <option value="$PROJECT_DIR$/include/generic_head.php" />
         <option value="$PROJECT_DIR$/include/generic_navbar.php" />
         <option value="$PROJECT_DIR$/main.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/include/generic_header.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -187,47 +191,6 @@
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
               <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="phpmailer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="phpmailer" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -275,7 +238,8 @@
       <workItem from="1555184898749" duration="7943000" />
       <workItem from="1555196766985" duration="3361000" />
       <workItem from="1555373965163" duration="6470000" />
-      <workItem from="1555461325412" duration="4844000" />
+      <workItem from="1555461325412" duration="5346000" />
+      <workItem from="1555481430682" duration="2227000" />
     </task>
     <task id="LOCAL-00001" summary="Ingreso de la plantilla">
       <created>1555122398857</created>
@@ -326,17 +290,23 @@
       <option name="project" value="LOCAL" />
       <updated>1555394550052</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="inicio de sesion">
+      <created>1555480355766</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555480355770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23750000" />
+    <option name="totallyTimeSpent" value="26479000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2685325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,7 +337,8 @@
     <MESSAGE value="Se eliminó una columna y se ingresó el usuario de prueba a la base de datos" />
     <MESSAGE value="Se agregaron los permisos al usuario prueba" />
     <MESSAGE value="iniciando con el header y agregando el logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="iniciando con el header y agregando el logo" />
+    <MESSAGE value="inicio de sesion" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicio de sesion" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/usuario.php">
@@ -436,6 +407,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/clientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="83" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -457,24 +435,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clientes.php">
+    <entry file="file://$PROJECT_DIR$/include/generic_header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="43" column="83" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="83" />
+        <state relative-caret-position="-663">
+          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/generic_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="1020">
+          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#2;n#form#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -235,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `biome1m_usuarios` (
   `usuarios_lineacorreo` TINYINT NULL,
   `usuarios_correosespeciales` TINYINT NULL,
   `usuarios_borrado` TINYINT NULL,
-  `usuarios_fechamodifi` TINYINT NULL,
+  `usuarios_fechamodifi` DATE NULL,
   `usuarios_ingeniero` TINYINT NULL,
   PRIMARY KEY (`usuarios_id`))
 ENGINE = InnoDB;

@@ -123,6 +123,17 @@ function checkLength(o, n, min, max) {
     }
 }
 
+function  checkpass(pass1, pass2, val1, val2) {
+    if(val1 == val2 && (pass1.val().length > 3 || pass1.val().length < 30)){
+        return true;
+    } else {
+        pass1.addClass("ui-state-error");
+        pass2.addClass("ui-state-error");
+        updateTips("Las contraseñas no coinciden o no tienen el tamaño adecuado");
+        return false;
+    }
+}
+
 function checkRegexp(o, regexp, n) {
     if (!(regexp.test(o.val()))) {
         o.addClass("ui-state-error");

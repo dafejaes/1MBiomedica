@@ -1,22 +1,15 @@
-$(document).on('ready', initcliente);
+$(document).on('ready', registro);
 var q, nombre, estado, allFields, tips;
 
 /**
  * se activa para inicializar el documento
  */
-function initcliente() {
+function registro() {
     q = {};
     q.ke = _ucode;
     q.lu = _ulcod;
     q.ti = _utval;
-    nombre = $("#nombre");
-    estado = $("#estado");
-    allFields = $([]).add(nombre).add(estado);
-    tips = $(".validateTips");
 
-    $('#dynamictable').dataTable({
-        "sPaginationType": "full_numbers"
-    });
 
     UTIL.applyDatepicker('fechainicio');
     UTIL.applyDatepicker('fechafin');

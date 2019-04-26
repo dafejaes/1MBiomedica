@@ -1,5 +1,5 @@
 <div align="left" class="divider" style="color: ">
-    <table width="1370px"
+    <table width="1365px"
         <tr>
             <td rowspan="2" width="685px" bgcolor="#add8e6">
                 <img src="images/cabezote.jpg" width="90px" alt="1mbiomedica"/>
@@ -7,7 +7,10 @@
             <td bgcolor="#add8e6" align="right">
                 <?php
                 if (isset($_SESSION['usuario'])){
-
+                    ?>
+                    <img src="images/64572.png" width="50px" alt="FueraDeSesion"/>
+                    <a href="#" id="iniciosesion" class="btn btn-info botoncrear"><?php echo $_SESSION['usuario']['nombres']. " " . $_SESSION['usuario']['apellidos'] ?></a>
+                    <?php
                 }
                 else {
                     ?>
@@ -25,7 +28,7 @@
                     <div class="navbar-inner">
                         <ul class="nav">
                             <?php
-                            if (isset($_SESSION['usuario'])) {
+                            if (isset($_SESSION['usuario']) and $_SESSION['usuario']['ingeniero'] == 1) {
                                 if($SESSION_DATA->getPermission(1)){
                                     ?>
                                     <li <?php if ($_ACTIVE_SIDEBAR == "clientes") echo 'class="active"'; ?>><a href="clientes.php">Clientes</a></li>

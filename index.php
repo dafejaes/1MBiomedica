@@ -19,7 +19,6 @@ if (isset($_SESSION['usuario'])) {
         $USUARIO->extraLogin($email, $pass);
         $res = $USUARIO->getResponse();
         $isvalid = $res['output']['valid'];
-        echo "Hello";
         if ($isvalid) {
             $_SESSION['usuario'] = $res['output'];
             header('Location: main.php');
@@ -146,7 +145,9 @@ if (isset($_SESSION['usuario'])) {
                 </div>
             </form>
         </div>
+        <?php include 'include/FormInicio.php';?>
         <?php include 'include/generic_script.php'; ?>
         <script type="text/javascript" src="js/registro.js"></script>
+        <script type="text/javascript" src="js/InicioSesion.js"></script>
     </body>
 </html>

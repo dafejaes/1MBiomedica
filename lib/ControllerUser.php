@@ -38,10 +38,10 @@ class ControllerUser {
             $this->especialco = isset($rqst['especialco']) ? $rqst['especialco'] : 0;
             $this->ingeniero = isset($rqst['ingeniero']) ? $rqst['ingeniero'] : 0;
             $this->usrsavegeneral();
-        }else if ($this->op == 'usrlogin') {
+        }else if ($this->op == 'usrlogin2') {
             $this->email = isset($rqst['email']) ? $rqst['email'] : '';
             $this->pass = isset($rqst['pass']) ? $rqst['pass'] : '';
-            /*$this->usrlogin();*/
+            $this->usrlogin();
         } else if ($this->op == 'usrget') {
             $this->usrget();
         } else if ($this->op == 'usrprfget') {
@@ -196,7 +196,6 @@ class ControllerUser {
                 $pass = $this->UTILITY->make_hash_pass($this->email, $this->pass);
                 $q = '';
                 $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_correo = '$this->email' AND usuarios_contrasena = '$pass' AND usuarios_borrado = 0";
-                echo $q;
                 $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
                 $resultado = mysqli_num_rows($con);
                 echo $resultado;

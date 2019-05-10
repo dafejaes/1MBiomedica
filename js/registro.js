@@ -95,48 +95,6 @@ function registro() {
 }
 
 var REGISTROIN = {
-    deletedata: function(id) {
-        var continuar = confirm('Va a eliminar información de forma irreversible.\n¿Desea continuar?');
-        if (continuar) {
-            q.op = 'clidelete';
-            q.id = id;
-            UTIL.callAjaxRqst(q, this.deletedatahandler);
-        }
-    },
-    deletedatahandler: function(data) {
-        UTIL.cursorNormal();
-        if (data.output.valid) {
-            window.location = 'clientes.php';
-        } else {
-            alert('Error: ' + data.output.response.content);
-        }
-    },
-    editdata: function(id) {
-        q.op = 'cliget';
-        q.id = id;
-        UTIL.callAjaxRqst(q, this.editdatahandler);
-    },
-    editdatahandler: function(data) {
-        UTIL.cursorNormal();
-        if (data.output.valid) {
-            var res = data.output.response[0];
-            $('#nombre').val(res.nombre);
-            $('#estado').val(res.estado);
-            $('#email').val(res.email);
-            $('#url').val(res.url);
-            $('#fechainicio').val(res.fechainicio);
-            $('#fechafin').val(res.fechafin);
-            $('#nit').val(res.nit);
-            $('#telefono').val(res.telefono);
-            $('#pais').val(res.pais);
-            $('#departamento').val(res.departamento);
-            $('#ciudad').val(res.ciudad);
-            $('#direccion').val(res.direccion);
-            $("#dialog-form").dialog("open");
-        } else {
-            alert('Error: ' + data.output.response.content);
-        }
-    },
     savedata: function() {
         q.op = 'usrsavegeneral';
         q.id = 0;

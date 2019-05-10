@@ -149,14 +149,23 @@ var REGISTROIN = {
         q.ciudad = $("#ciudad").val();
         q.departamento = $("#departamento").val();
         q.direccion = $("#direccion").val();
-        q.lineacorreo = $('#lineacorreo').prop('checked');
-        q.especialco = $('#especialco').prop('checked');
-        q.igeniero = false;
+        q.lineacorreo1 = $('#lineacorreo').prop('checked');
+        q.especialco1 = $('#especialco').prop('checked');
+        if(q.lineacorreo1){
+            q.lineacorreo = 1;
+        }else{
+            q.lineacorreo = 0;
+        }
+        if(q.especialco1){
+            q.especialco = 1;
+        }else{
+            q.especialco = 0;
+        }
+        q.igeniero = 0;
         UTIL.callAjaxRqst(q, this.savedatahandler);
     },
     savedatahandler: function(data) {
-        UTIL.cursorNormal();
-        debugger;
+        UTIL.cursorNormal()
         if (data.output.valid) {
             updateTips('Información guardada correctamente');
             window.location = 'index.php';

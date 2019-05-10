@@ -23,15 +23,7 @@ class ControllerUser {
         $this->ke = isset($rqst['ke']) ? $rqst['ke'] : '';
         $this->lu = isset($rqst['lu']) ? $rqst['lu'] : '';
         $this->ti = isset($rqst['ti']) ? $rqst['ti'] : '';
-        if ($this->op != 'usrlogin' && $this->op != 'usrsavegeneral') {
-            if (!$this->UTILITY->validate_key($this->ke, $this->ti, $this->lu)) {
-                $this->op = 'noautorizado';
-            }
-        } else {
-            if (!$this->UTILITY->validate_key($this->ke, $this->ti)) {
-                $this->op = 'noautorizado';
-            }
-        }
+
         if ($this->op == 'usrsavegeneral') {
             $this->nombre = isset($rqst['nombre']) ? $rqst['nombre'] : '';
             $this->apellido = isset($rqst['apellido']) ? $rqst['apellido'] : '';
@@ -42,14 +34,14 @@ class ControllerUser {
             $this->ciudad = isset($rqst['ciudad']) ? $rqst['ciudad'] : '';
             $this->departamento = isset($rqst['departamento']) ? $rqst['departamento'] : '';
             $this->direccion = isset($rqst['direccion']) ? $rqst['direccion'] : '';
-            $this->lineacorreo = isset($rqst['lineacorreo']) ? $rqst['lineacorreo'] : '';
-            $this->especialco = isset($rqst['especialco']) ? $rqst['especialco'] : '';
-            $this->ingeniero = isset($rqst['ingeniero']) ? $rqst['ingeniero'] : '';
-            $this->usrsave();
-        } else if ($this->op == 'usrlogin') {
+            $this->lineacorreo = isset($rqst['lineacorreo']) ? $rqst['lineacorreo'] : 0;
+            $this->especialco = isset($rqst['especialco']) ? $rqst['especialco'] : 0;
+            $this->ingeniero = isset($rqst['ingeniero']) ? $rqst['ingeniero'] : 0;
+            $this->usrsavegeneral();
+        }else if ($this->op == 'usrlogin') {
             $this->email = isset($rqst['email']) ? $rqst['email'] : '';
             $this->pass = isset($rqst['pass']) ? $rqst['pass'] : '';
-            $this->usrlogin();
+            /*$this->usrlogin();*/
         } else if ($this->op == 'usrget') {
             $this->usrget();
         } else if ($this->op == 'usrprfget') {
@@ -70,7 +62,7 @@ class ControllerUser {
     /**
      * Metodo para guardar y actualizar
      */
-    private function usrsave() {
+    private function usrsavegeneral() {
         $id = 0;
         $resultado = 0;
         $pass = '';
@@ -123,30 +115,11 @@ class ControllerUser {
                         $pass = $this->UTILITY->make_hash_pass($this->email, $this->pass);
                     }
                     $this->pass = $pass;
-                    $lineacorreo = 0;
-                    $especialco = 0;
-                    $ingeniero = 0;
-                    if($this->lineacorreo){
-                        $lineacorreo = 1;
-                    } else {
-                        $lineacorreo = 0;
-                    }
-                    $this->lineacorreo = $lineacorreo;
-                    if($this->especialco){
-                        $especialco = 1;
-                    } else {
-                        $especialco = 0;
-                    }
-                    $this->especialco = $especialco;
-                    if($this->ingeniero){
-                        $ingeniero = 1;
-                    } else {
-                        $ingeniero = 0;
-                    }
-                    $this->ingeniero=$ingeniero;
-                    $q = "INSERT INTO biome1m_usuarios (usuarios_cedula, usuarios_nombres, usuarios_apellidos, usuarios_correo, usuarios_contrasena, uaurios_nacimiento, usuarios_ciudad, usuarios_departamento, usuarios_direccion, usuarios_lineacorreo, usuarios_correosespeciales, usuarios_borrado, usuarios_fechamodifi, usuarios_ingeniero) VALUES (" . "'$this->identificacion' " . ", '$this->nombre' " . ", '$this->apellido'" . ", '$this->email'" . ", '$this->pass'" . ", '$this->fechanaci'" . ", '$this->ciudad'" . ", '$this->departamento'". ", '$this->direccion'" . ", $this->lineacorreo , $this->especialco , 0 ," . $this->UTILITY->date_now_server() . ",  $this->ingeniero)";
-                    mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
-                    $id = mysqli_insert_id();
+
+                    $q = "INSERT INTO biome1m_usuarios (usuarios_cedula, usuarios_nombres, usuarios_apellidos, usuarios_correo, usuarios_contrasena, usuarios_nacimiento, usuarios_ciudad, usuarios_departamento, usuarios_direccion, usuarios_lineacorreo, usuarios_correosespeciales, usuarios_borrado, usuarios_fechamodifi, usuarios_ingeniero) 
+                          VALUES (" . "'$this->identificacion' " . ", '$this->nombre' " . ", '$this->apellido'" . ", '$this->email'" . ", '$this->pass'" . ", '$this->fechanaci'" . ", '$this->ciudad'" . ", '$this->departamento'". ", '$this->direccion'" . ", $this->lineacorreo , $this->especialco , 0 ," . $this->UTILITY->date_now_server() . ",  $this->ingeniero )";
+                    mysqli_query($this->conexion, $q) or die(mysqli_error() . "***ERROR: " . $q);
+                    $id = mysqli_insert_id($this->conexion);
                     $arrjson = array('output' => array('valid' => true, 'id' => $id));
                 } else {
                     $arrjson = $this->UTILITY->error_user_already_exist();
@@ -219,10 +192,14 @@ class ControllerUser {
             if ($this->email == "" || $this->pass == "") {
                 $arrjson = $this->UTILITY->error_missing_data();
             } else {
+                echo $this->pass;
                 $pass = $this->UTILITY->make_hash_pass($this->email, $this->pass);
+                $q = '';
                 $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_correo = '$this->email' AND usuarios_contrasena = '$pass' AND usuarios_borrado = 0";
+                echo $q;
                 $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
                 $resultado = mysqli_num_rows($con);
+                echo $resultado;
                 while ($obj = mysqli_fetch_object($con)) {
                     /*$q2 = "SELECT cli_id, cli_nombre FROM dmt_cliente WHERE cli_id = " . $obj->dmt_cliente_cli_id;
                     $con2 = mysql_query($q2, $this->conexion) or die(mysql_error() . "***ERROR: " . $q2);

@@ -28,11 +28,13 @@
                     <div class="navbar-inner">
                         <ul class="nav">
                             <?php
-                            if (isset($_SESSION['usuario']) and $_SESSION['usuario']['ingeniero'] == 1) {
+                            if (isset($_SESSION['usuario']) && $_SESSION['usuario']['ingeniero'] == 1) {
                                 if($SESSION_DATA->getPermission(1)){
                                     ?>
                                     <li <?php if ($_ACTIVE_SIDEBAR == "clientes") echo 'class="active"'; ?>><a href="clientes.php">Clientes</a></li>
                                     <li class="divider-vertical"></li>
+                                    <li class="divider-vertical"></li>
+                                    <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
                                     <?php
                                 }
                                 if($SESSION_DATA->getPermission(5)){
@@ -55,6 +57,7 @@
                                 <li <?php if ($_ACTIVE_SIDEBAR == "informaciongeneral") echo 'class="active"'; ?>><a href="informaciongeneral.php">Información</a></li>
                                 <li class="divider-vertical"></li>
                                 <li <?php if ($_ACTIVE_SIDEBAR == "novedadesgeneral") echo 'class="active"'; ?>><a href="novedadesgeneral.php">Novedades</a></li>
+
                                 <?php
                             }
                             ?>

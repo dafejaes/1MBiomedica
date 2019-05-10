@@ -4,26 +4,28 @@ include 'include/SessionData.php';
 $SESSION_DATA = new SessionData();
 $mensaje = '';
 if (isset($_SESSION['usuario'])) {
-    header('Location: index.php');
+    echo "main";
+    header('Location: main.php');
 } else {
     $rqst = $_REQUEST;
     $op = isset($rqst['op']) ? $rqst['op'] : '';
     if ($op == 'usrlogin') {
-	include 'lib/ControllerUser.php';
-	//$ke = isset($rqst['ke']) ? $rqst['ke'] : '';
-	$email = isset($rqst['email']) ? $rqst['email'] : '';
-	$pass = isset($rqst['pass']) ? $rqst['pass'] : '';
-	$pass = sha1($pass);
-	$USUARIO = new ControllerUser();
-	$USUARIO->extraLogin($email, $pass);
-	$res = $USUARIO->getResponse();
-	$isvalid = $res['output']['valid'];
-	if ($isvalid) {
-	    $_SESSION['usuario'] = $res['output'];
-	    header('Location: main.php');
-	} else {
-	    $mensaje = $res['output']['response']['content'];
-	}
+        include 'lib/ControllerUser.php';
+        //$ke = isset($rqst['ke']) ? $rqst['ke'] : '';
+        $email = isset($rqst['email']) ? $rqst['email'] : '';
+        $pass = isset($rqst['pass']) ? $rqst['pass'] : '';
+        //$pass = sha1($pass);
+        $USUARIO = new ControllerUser();
+        $USUARIO->extraLogin($email, $pass);
+        $res = $USUARIO->getResponse();
+        $isvalid = $res['output']['valid'];
+        echo "Hello";
+        if ($isvalid) {
+            $_SESSION['usuario'] = $res['output'];
+            header('Location: main.php');
+        } else {
+            $mensaje = $res['output']['response']['content'];
+        }
     }
 }
 ?>
@@ -144,12 +146,6 @@ if (isset($_SESSION['usuario'])) {
                 </div>
             </form>
         </div>
-	    <script type="text/javascript">
-	        $(document).ready(function(){
-		    $('#ti').val(_utval);
-		    $('#ke').val(_gcode);
-	        });
-	    </script>
         <?php include 'include/generic_script.php'; ?>
         <script type="text/javascript" src="js/registro.js"></script>
     </body>

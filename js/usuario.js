@@ -86,7 +86,7 @@ function initusuario() {
     
 
 var USUARIO = {
-    deletedata: function(id) {
+    /*deletedata: function(id) {
 	var continuar = confirm('Va a eliminar información de forma irreversible.\n¿Desea continuar?');
 	if (continuar) {
 	    q.op = 'usrdelete';
@@ -230,5 +230,5 @@ var USUARIO = {
 	} else {
 	    updateTips('Error: ' + data.output.response.content);
 	}
-    }
+    }*/
 }

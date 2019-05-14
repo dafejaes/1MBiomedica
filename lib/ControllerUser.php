@@ -130,9 +130,9 @@ class ControllerUser {
     }
 
     public function usrget() {
-        $q = "SELECT * FROM dmt_usuario ORDER BY usr_nombre ASC";
+        $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_borrado = 0 ORDER BY usuarios_nombres ASC";
         if ($this->id > 0) {
-            $q = "SELECT * FROM dmt_usuario WHERE usr_id = " . $this->id;
+            $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_borrado = 0 AND usr_id = " . $this->id;
         }
         //if ($this->sdid > 0) {
         //    $q = "SELECT * FROM fir_usuario WHERE fir_sede_sde_id = " . $this->sdid;
@@ -140,26 +140,24 @@ class ControllerUser {
         //if ($this->euid > 0) {
         //    $q = "SELECT * FROM fir_usuario WHERE fir_empresa_emp_id = " . $this->euid;
         //}
-        $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
-        $resultado = mysql_num_rows($con);
+        $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
+        $resultado = mysqli_num_rows($con);
         $arr = array();
-        while ($obj = mysql_fetch_object($con)) {
+        while ($obj = mysqli_fetch_object($con)) {
             $arr[] = array(
-                'id' => $obj->usr_id,
-                'idcli' => $obj->dmt_cliente_cli_id,
-                'nombre' => ($obj->usr_nombre),
-                'apellido' => ($obj->usr_apellido),
-                'cargo' => ($obj->usr_cargo),
-                'email' => ($obj->usr_email),
-                'identificacion' => ($obj->usr_identificacion),
-                'celular' => ($obj->usr_celular),
-                'telefono' => ($obj->usr_telefono),
-                'pais' => ($obj->usr_pais),
-                'departamento' => ($obj->usr_departamento),
-                'ciudad' => ($obj->usr_ciudad),
-                'direccion' => ($obj->usr_direccion),
-                'habilitado' => ($obj->usr_habilitado),
-                'dtcreate' => ($obj->usr_dtcreate));
+                'id' => $obj->usuarios_id,
+                'cedula' => $obj->usuarios_cedula,
+                'nombres' => ($obj->usuarios_nombres),
+                'apellidos' => ($obj->usuarios_apellidos),
+                'email' => ($obj->usuarios_correo),
+                'fnacimiento' => ($obj->usuarios_nacimiento),
+                'ciudad' => ($obj->usuarios_ciudad),
+                'departamento' => ($obj->usuarios_departamento),
+                'direccion' => ($obj->usuarios_direccion),
+                'lcorreo' => ($obj->usuarios_lineacorreo),
+                'coespeciales' => ($obj->usuarios_correosespeciales),
+                'ing' => ($obj->usuarios_ingeniero),
+                'dtcreate' => ($obj->usuarios_fechamodifi));
         }
         if ($resultado > 0) {
             $arrjson = array('output' => array('valid' => true, 'response' => $arr));
@@ -192,13 +190,11 @@ class ControllerUser {
             if ($this->email == "" || $this->pass == "") {
                 $arrjson = $this->UTILITY->error_missing_data();
             } else {
-                echo $this->pass;
                 $pass = $this->UTILITY->make_hash_pass($this->email, $this->pass);
                 $q = '';
                 $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_correo = '$this->email' AND usuarios_contrasena = '$pass' AND usuarios_borrado = 0";
                 $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
                 $resultado = mysqli_num_rows($con);
-                echo $resultado;
                 while ($obj = mysqli_fetch_object($con)) {
                     /*$q2 = "SELECT cli_id, cli_nombre FROM dmt_cliente WHERE cli_id = " . $obj->dmt_cliente_cli_id;
                     $con2 = mysql_query($q2, $this->conexion) or die(mysql_error() . "***ERROR: " . $q2);

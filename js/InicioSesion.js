@@ -25,71 +25,20 @@ function registro() {
         ciudad = $("#ciudad");
         departamento = $("#departamento");
         direccion = $("#direccion");
-        $("#dialog-form2").dialog("open");
+        $("#Inicio_Sesion").dialog("open");
     });
-    $("#dialog-form2").dialog({
-        autoOpen: false, height: 600, width: 450, modal: true,
+    $("#Inicio_Sesion").dialog({
+        autoOpen: false, height: 400, width: 450, modal: true,
         buttons: {
-            "Guardar": function() {
-                nombre = $("#nombre");
-                apellido = $("#apellido");
-                contrasena1 = $("#password2");
-                contrasena2 = $("#password3");
-                ciudad = $("#ciudad");
-                departamento = $("#departamento");
-                direccion = $("#direccion");
-                lineaco = $("#lineacorreo").val();
-                bValid = bValid && checkLength(nombre, "nombres", 3, 30);
-                UTIL.isEmail($("#email2"));
-                if (bValid) {
 
-                    bValid = bValid && checkLength(apellido, "apellidos", 3, 30);
-
-                    if (bValid) {
-                        bValid = bValid && checkpass(contrasena1,contrasena2,contrasena1.val(), contrasena2.val());
-                        if(bValid){
-                            bValid = bValid && checkLength(ciudad, "Ciudad", 3, 30);
-
-                            if(bValid){
-                                bValid = bValid && checkLength(departamento, "departamento", 3, 30);
-
-                                if(bValid) {
-                                    bValid = bValid && checkLength(direccion, "direccion", 3, 80);
-                                    if (bValid) {
-                                        INICIO.savedata();
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }
-            },
             "Cancelar": function() {
                 $(this).dialog("close");
                 UTIL.clearForm('formcreate');
-                nombre.removeClass("ui-state-error");
-                apellido.removeClass("ui-state-error");
-                contrasena1.removeClass("ui-state-error");
-                contrasena2.removeClass("ui-state-error");
-                ciudad.removeClass("ui-state-error");
-                departamento.removeClass("ui-state-error");
-                direccion.removeClass("ui-state-error");
-                $("#email2").removeClass("ui-state-error");
                 updateTips('');
             }
         },
         close: function() {
             UTIL.clearForm('formcreate');
-            nombre.removeClass("ui-state-error");
-            apellido.removeClass("ui-state-error");
-            contrasena1.removeClass("ui-state-error");
-            contrasena2.removeClass("ui-state-error");
-            ciudad.removeClass("ui-state-error");
-            departamento.removeClass("ui-state-error");
-            direccion.removeClass("ui-state-error");
-            $("#email2").removeClass("ui-state-error");
-            updateTips('');
         }
     });
 }

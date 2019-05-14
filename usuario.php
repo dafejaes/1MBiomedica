@@ -4,13 +4,13 @@ include 'lib/ControllerUser.php';
 /**
  * se cargan los permisos 
  */
-if (!$SESSION_DATA->getPermission(5)){
+if (!$SESSION_DATA->getPermission(1)){
     header('Location: main.php');
 }
-$create = $SESSION_DATA->getPermission(6);
-$edit = $SESSION_DATA->getPermission(7);
-$delete = $SESSION_DATA->getPermission(8);
-$editpermission = $SESSION_DATA->getPermission(9);
+$create = $SESSION_DATA->getPermission(2);
+$edit = $SESSION_DATA->getPermission(3);
+$delete = $SESSION_DATA->getPermission(4);
+$editpermission = $SESSION_DATA->getPermission(5);
 /**
  * se cargan datos
  */
@@ -27,34 +27,35 @@ $arrusuarios = $arrusuarios['output']['response'];
     </head>
     <body>
         <header>
-	    <?php
-	    include 'include/generic_header.php';
-	    ?>
+	        <?php
+            $_ACTIVE_SIDEBAR = 'usuario';
+            include 'include/generic_header.php';
+            ?>
         </header>
         <section id="section_wrap">
             <div class="container">
-		<?php
-		$_ACTIVE_SIDEBAR = 'usuario';
-		include 'include/generic_navbar.php';
-		?>
             </div>
             <div class="container">
-		<?php
-		if ($create) {
-		    ?>
-                    <a href="#" id="crearusuario" class="btn btn-info botoncrear">Crear</a>
-		    <?php
-		}
-		?>
+		        <?php
+		            if ($create) {
+		        ?>
+                        <!--<a href="#" id="crearusuario" class="btn btn-info botoncrear">Crear</a>-->
+		        <?php
+		            }
+		        ?>
                 <div>
                     <table class="table table-hover dyntable" id="dynamictable">
                         <thead>
                             <tr>
                                 <th class="head0" style="width: 70px;">Acciones</th>
-                                <th class="head1">Nombre completo</th>
-                                <th class="head0">Email</th>
-                                <th class="head1">Telefono / Celular</th>
-                                <th class="head0">País</th>
+                                <th class="head1">Cedula</th>
+                                <th class="head0">Nombre Completo</th>
+                                <th class="head1">Email</th>
+                                <th class="head0">F. Nacimiento</th>
+                                <th class="head1">Ciudad</th>
+                                <th class="head0">Direccion</th>
+                                <th class="head1">¿Ingeniero?</th>
+                                <th class="head0">Foto</th>
                             </tr>
                         </thead>
                         <colgroup>
@@ -63,43 +64,51 @@ $arrusuarios = $arrusuarios['output']['response'];
                             <col class="con0" />
                             <col class="con1" />
                             <col class="con0" />
+                            <col class="con1" />
+                            <col class="con0" />
+                            <col class="con1" />
+                            <col class="con0" />
                         </colgroup>
 <!--                                    <td class="con0"><a href="#" onclick="editdata();"><span class="ui-icon ui-icon-pencil"></span></a><a href="#"><span class="ui-icon ui-icon-trash"></span></a></td>-->
                         <tbody>
-			    <?php
-			    $c = count($arrusuarios);
-			    if ($isvalid) {
-				for ($i = 0; $i < $c; $i++) {
-				    ?>
-				    <tr class="gradeC">
-					<td class="con0">
-					    <?php
-					    if ($delete) {
-						?>
-	    				    <a href="#" onclick="USUARIO.editdata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-pencil"></span></a><span>&nbsp;&nbsp;</span>
-						<?php
-					    }
-					    if ($edit) {
-						?>
-	    				    <a href="#" onclick="USUARIO.deletedata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-trash"></span></a><span>&nbsp;&nbsp;</span>
-						<?php
-					    }
-					    if ($editpermission) {
-						?>
-	    				    <a href="#" onclick="USUARIO.editpermission(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-ban-circle"></span></a>
-						<?php
-					    }
-					    ?>
-					</td>
-					<td class="con1"><?php echo $arrusuarios[$i]['nombre'] . ' ' . $arrusuarios[$i]['apellido']; ?></td>
-					<td class="con0"><?php echo $arrusuarios[$i]['email']; ?></td>
-					<td class="con1"><?php echo $arrusuarios[$i]['telefono'] . ' / ' . $arrusuarios[$i]['celular']; ?></td>
-					<td class="con0"><?php echo $arrusuarios[$i]['pais']; ?></td>
-				    </tr>
-				    <?php
-				}
-			    }
-			    ?>
+			                <?php
+			                    $c = count($arrusuarios);
+			                    if ($isvalid) {
+				                    for ($i = 0; $i < $c; $i++) {
+				            ?>
+				            <tr class="gradeC">
+					            <td class="con0">
+					        <?php
+					                    if ($delete) {
+						    ?>
+	    				            <a href="#" onclick="USUARIO.editdata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-trash"></span></a><span>&nbsp;&nbsp;</span>
+						    <?php
+					                    }
+					                    if ($edit) {
+						    ?>
+	    				            <a href="#" onclick="USUARIO.deletedata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-pencil"></span></a><span>&nbsp;&nbsp;</span>
+						    <?php
+					                    }
+					                    if ($editpermission && $arrusuarios[$i]['ing']) {
+						    ?>
+	    				            <a href="#" onclick="USUARIO.editpermission(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-ban-circle"></span></a>
+						    <?php
+					                    }
+					        ?>
+					            </td>
+					            <td class="con1"><?php echo $arrusuarios[$i]['cedula']; ?></td>
+					            <td class="con0"><?php echo $arrusuarios[$i]['nombres'] . ' ' . $arrusuarios[$i]['apellidos']; ?></td>
+					            <td class="con1"><?php echo $arrusuarios[$i]['email']; ?></td>
+					            <td class="con0"><?php echo $arrusuarios[$i]['fnacimiento']; ?></td>
+                                <td class="con1"><?php echo $arrusuarios[$i]['ciudad'] . '-' . $arrusuarios[$i]['departamento']?></td>
+                                <td class="con0"><?php echo $arrusuarios[$i]['direccion']?></td>
+                                <td class="con1"><?php if($arrusuarios[$i]['ing'] == 1){echo 'Sí';}else{echo 'No';};?></td>
+                                <td class="con0"><a href="#" onclick="USUARIO.editpermission(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-camera"></span></a></td>
+                            </tr>
+				            <?php
+				                    }
+			                    }
+			                ?>
                         </tbody>
                     </table>
                 </div>
@@ -205,5 +214,6 @@ $arrusuarios = $arrusuarios['output']['response'];
         <script type="text/javascript" src="js/jquery/jquery-dataTables.js"></script>
         <script type="text/javascript" src="js/lib/data-sha1.js"></script>
         <script type="text/javascript" src="js/usuario.js"></script>
+        <script type="text/javascript" src="js/registro.js"></script>
     </body>
 </html>

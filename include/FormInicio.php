@@ -1,4 +1,4 @@
-<div id="dialog-form2" title="Inicio Sesion" style="display: none;">
+<div id="Inicio_Sesion" title="Inicio Sesion" style="display: none;">
     <p class="validateTips"></p>
     <section id="section_wrap">
         <form class="form-actions" style="margin: 0 auto !important; width: 220px;">
@@ -27,7 +27,6 @@
             <div class="control-group">
                 <div class="controls">
                     <button type="submit" class="btn btn-info">Ingresar</button>
-                    <a href="#" id="registro" class="btn btn-info botoncrear">Registro</a>
                 </div>
             </div>
         </form>

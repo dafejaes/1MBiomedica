@@ -9,7 +9,11 @@
                 if (isset($_SESSION['usuario'])){
                     ?>
                     <img src="images/64572.png" width="50px" alt="FueraDeSesion"/>
-                    <a href="#" id="iniciosesion" class="btn btn-info botoncrear"><?php echo $_SESSION['usuario']['nombres']. " " . $_SESSION['usuario']['apellidos'] ?></a>
+                    <select name="informacion" id="informacion" class="text ui-widget-content ui-corner-all" onclick="">
+                        <option value="1"><?php echo $_SESSION['usuario']['nombres'] . $_SESSION['usuario']['apellidos']?></option>
+                        <option value="2">Actualizar datos</option>
+                        <option value="3">Salir</option>
+                    </select>
                     <?php
                 }
                 else {
@@ -31,18 +35,13 @@
                             if (isset($_SESSION['usuario']) && $_SESSION['usuario']['ingeniero'] == 1) {
                                 if($SESSION_DATA->getPermission(1)){
                                     ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "clientes") echo 'class="active"'; ?>><a href="clientes.php">Clientes</a></li>
-                                    <li class="divider-vertical"></li>
-                                    <li class="divider-vertical"></li>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
-                                    <?php
-                                }
-                                if($SESSION_DATA->getPermission(5)){
-                                    ?>
                                     <li <?php if ($_ACTIVE_SIDEBAR == "usuario") echo 'class="active"'; ?>><a href="usuario.php">Usuarios</a></li>
                                     <li class="divider-vertical"></li>
                                     <?php
                                 }
+                                    ?>
+                                    <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
+                                    <?php
                             }
                             else{
                                 ?>
@@ -74,7 +73,6 @@
                                                 <li><a href="#">Cerrar Sesión</a></li>
                                             </ul>
                                         </li>-->
-                        </ul>
                     </div>
                     <!--    <ul class="breadcrumb">
                             <li><a href="clientes.php">Franquicias</a> <span class="divider">/</span></li>

@@ -1,6 +1,6 @@
 $(document).on('ready', initusuario);
-var q, nombre,  allFields, tips;
-
+var q, estado, allFields, tips, nombre, apellido, contrasena1, contrasena2, ciudad, departamento, direccion, lineaco;
+var bValid = true;
 /**
  * se activa para inicializar el documento
  */
@@ -14,38 +14,62 @@ function initusuario() {
     tips = $(".validateTips");
 
     $('#dynamictable').dataTable({
-	"sPaginationType": "full_numbers"
+		"sPaginationType": "full_numbers"
     });
 
     $("#crearusuario").button().click(function() {
-	q.id = 0;
-	$("#dialog-form").dialog("open");
+		q.id = 0;
+		nombre = $("#nombre");
+		apellido = $("#apellido");
+		contrasena1 = $("#password2");
+		contrasena2 = $("#password3");
+		ciudad = $("#ciudad");
+		departamento = $("#departamento");
+		direccion = $("#direccion");
+		$("#form_crearusuario").dialog("open");
     });
 
-    $("#dialog-form").dialog({
-	autoOpen: false, 
-	height: 580, 
-	width: 900, 
-	modal: true,
-	buttons: {
-	    "Guardar": function() {
-		var bValid = true;
-		allFields.removeClass("ui-state-error");
-		bValid = bValid && checkLength(nombre, "nombre", 3, 16);
-		if ("seleccione" == $("#idcli").val()){
-		    bValid = false;
-		    updateTips('Seleccione el cliente al cual pertenece el usuario.');
-		}
-		if (bValid) {
-		    USUARIO.savedata();
-		//$(this).dialog("close");
-		}
-	    },
-	    "Cancelar": function() {
-		UTIL.clearForm('formcreate1');
-		UTIL.clearForm('formcreate2');
-		$(this).dialog("close");
-	    }
+    $("#form_crearusuario").dialog({
+		autoOpen: false,
+		height: 600,
+		width: 450,
+		modal: true,
+		buttons: {
+			"Guardar": function() {
+				nombre = $("#nombre");
+				apellido = $("#apellido");
+				contrasena1 = $("#password2");
+				contrasena2 = $("#password3");
+				ciudad = $("#ciudad");
+				departamento = $("#departamento");
+				direccion = $("#direccion");
+				lineaco = $("#lineacorreo").val();
+				bValid = bValid && checkLength(nombre, "nombres", 3, 30);
+				UTIL.isEmail($("#email2"));
+				if (bValid) {
+
+					bValid = bValid && checkLength(apellido, "apellidos", 3, 30);
+
+					if (bValid) {
+						bValid = bValid && checkpass(contrasena1,contrasena2,contrasena1.val(), contrasena2.val());
+						if(bValid){
+							bValid = bValid && checkLength(ciudad, "Ciudad", 3, 30);
+
+							if(bValid){
+								bValid = bValid && checkLength(departamento, "departamento", 3, 30);
+
+								if(bValid) {
+									bValid = bValid && checkLength(direccion, "direccion", 3, 80);
+									if (bValid) {
+										USUARIO.savedata();
+									}
+								}
+							}
+						}
+					}
+
+				}
+			}
 	},
 	close: function() {
 	    UTIL.clearForm('formcreate1');
@@ -79,8 +103,6 @@ function initusuario() {
 	    updateTips('');
 	}
     });
-    
-    USUARIO.getcustomer();
 }
 
     
@@ -201,34 +223,45 @@ var USUARIO = {
 	    alert('Error: ' + data.output.response.content);
 	}
     },
-    savedata: function() {
-	q.op = 'usrsave';
-	q.idcli = $('#idcli').val();
-	q.nombre = $('#nombre').val();
-	q.apellido = $('#apellido').val();
-	q.cargo = $('#cargo').val();
-	q.email = $('#email').val();
-	q.pass = '';
-	if ($('#pass').val().length > 1){
-	    q.pass = hex_sha1($('#pass').val());
-	}
-	q.identificacion = $('#identificacion').val();
-	q.celular = $('#celular').val();
-	q.telefono = $('#telefono').val();
-	q.pais = $('#pais').val();
-	q.departamento = $('#departamento').val();
-	q.ciudad = $('#ciudad').val();
-	q.direccion = $('#direccion').val();
-	q.habilitado = $('#habilitado').val();
-	UTIL.callAjaxRqst(q, this.savedatahandler);
-    },
-    savedatahandler: function(data) {
-	UTIL.cursorNormal();
-	if (data.output.valid) {
-	    updateTips('Información guardada correctamente');
-	    window.location = 'usuario.php';
-	} else {
-	    updateTips('Error: ' + data.output.response.content);
-	}
-    }*/
+    */savedata: function() {
+		q.op = 'usrsavegeneral';
+		q.id = 0;
+		q.nombre = $("#nombre").val();
+		q.apellido = $("#apellido").val();
+		q.cedula = $("#cedula").val();
+		q.email = $("#email2").val();
+		q.pass = $("#password2").val();
+		q.fechanaci = $("#fechanacimiento").val();
+		q.ciudad = $("#ciudad").val();
+		q.departamento = $("#departamento").val();
+		q.direccion = $("#direccion").val();
+		q.lineacorreo1 = $('#lineacorreo').prop('checked');
+		q.especialco1 = $('#especialco').prop('checked');
+		q.ingeniero1 = $('#ing').prop('checked');
+		if(q.lineacorreo1){
+			q.lineacorreo = 1;
+		}else{
+			q.lineacorreo = 0;
+		}
+		if(q.especialco1){
+			q.especialco = 1;
+		}else{
+			q.especialco = 0;
+		}
+		if(q.ingeniero1){
+			q.ingeniero=1;
+		}else{
+			q.ingeniero=0;
+		}
+		UTIL.callAjaxRqst(q, this.savedatahandler);
+		},
+		savedatahandler: function(data) {
+		UTIL.cursorNormal();
+		if (data.output.valid) {
+			updateTips('Información guardada correctamente');
+			window.location = 'usuario.php';
+		} else {
+			updateTips('Error: ' + data.output.response.content);
+		}
+    }
 }

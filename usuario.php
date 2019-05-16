@@ -39,7 +39,7 @@ $arrusuarios = $arrusuarios['output']['response'];
 		        <?php
 		            if ($create) {
 		        ?>
-                        <!--<a href="#" id="crearusuario" class="btn btn-info botoncrear">Crear</a>-->
+                        <a href="#" id="crearusuario" class="btn btn-info botoncrear">Crear</a>
 		        <?php
 		            }
 		        ?>
@@ -117,91 +117,62 @@ $arrusuarios = $arrusuarios['output']['response'];
         <footer id="footer_wrap">
 	    <?php include 'include/generic_footer.php'; ?>
         </footer>
-        <div id="dialog-form" title="Usuario" style="display: none;">
+        <div id="form_crearusuario" title="Registro de Usuario" style="display: none;">
             <p class="validateTips"></p>
-            <table>
-                <tr>
-                    <td>
-                        <form id="formcreate1" class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label">Pertenenece a</label>
-				<div class="controls">
-				    <select name="idcli" id="idcli" class="text ui-widget-content ui-corner-all">
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Nombres</label>
-                                <div class="controls"><input type="text" name="nombre" id="nombre" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Apellidos</label>
-                                <div class="controls"><input type="text" name="apellido" id="apellido" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Email</label>
-                                <div class="controls"><input type="email" name="email" id="email" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Contraseña</label>
-                                <div class="controls"><input type="password" name="pass" id="pass" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Repita Contraseña</label>
-                                <div class="controls"><input type="password" name="pass1" id="pass1" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Identificación</label>
-                                <div class="controls"><input type="text" name="identificacion" id="identificacion" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Cargo</label>
-                                <div class="controls"><input type="text" name="cargo" id="cargo" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                        </form>
-                    </td>
-                    <td>
-                        <form id="formcreate2" class="form-horizontal">
-                            <div class="control-group">
-                                <label class="control-label">Celular</label>
-                                <div class="controls"><input type="text" name="celular" id="celular" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Telefono</label>
-                                <div class="controls"><input type="text" name="telefono" id="telefono" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">País</label>
-                                <div class="controls"><input type="text" name="pais" id="pais" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Departamento</label>
-                                <div class="controls"><input type="text" name="departamento" id="departamento" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Ciudad</label>
-                                <div class="controls"><input type="text" name="ciudad" id="ciudad" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Dirección</label>
-                                <div class="controls"><input type="text" name="direccion" id="direccion" class="text ui-widget-content ui-corner-all" /></div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">Habilitado</label>
-                                <div class="controls"><select name="habilitado" id="habilitado" class="text ui-widget-content ui-corner-all">
-                                        <option value="1">Sí</option>
-                                        <option value="2">No</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">&nbsp;</label>
-                                <div class="controls">&nbsp;</div>
-                            </div>
-                        </form>
-                    </td>
-                </tr>
-            </table>
+            <form class="form-horizontal" id="formcreate">
+                <div class="control-group">
+                    <label class="control-label">Nombres*</label>
+                    <div class="controls"><input type="text" name="nombre" id="nombre" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Apellidos*</label>
+                    <div class="controls"><input type="text" name="apellido" id="apellido" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Cedula</label>
+                    <div class="controls"><input type="text" name="cedula" id="cedula" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Email*</label>
+                    <div class="controls"><input type="email" name="email2" id="email2" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Contraseña*</label>
+                    <div class="controls"><input type="password" name="password2" id="password2" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Repita Contraseña*</label>
+                    <div class="controls"><input type="password" name="password3" id="password3" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Fecha Nacimiento</label>
+                    <div class="controls"><input type="text" name="fechanacimiento" id="fechanacimiento" readonly="true" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Ciudad*</label>
+                    <div class="controls"><input type="text" name="ciudad" id="ciudad" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Departamento*</label>
+                    <div class="controls"><input type="text" name="departamento" id="departamento" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Dirección*</label>
+                    <div class="controls"><input type="text" name="direccion" id="direccion" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">¿El usuario es ingeniero?</label>
+                    <div class="controls"><input type="checkbox" name="ing" id="ing" value = "ing" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">¿Desea inscribirse a nuestra linea de correos?</label>
+                    <div class="controls"><input type="checkbox" name="lineacorreo" id="lineacorreo" value = "lineaco" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">¿Desea recibir correos especiales?</label>
+                    <div class="controls"><input type="checkbox" name="especialco" id="especialco" value = "especialco" class="text ui-widget-content ui-corner-all" /></div>
+                </div>
+            </form>
         </div>
 	<div id="dialog-permission" title="Permisos">
             <p class="validateTips"></p>

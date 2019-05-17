@@ -12,7 +12,7 @@ if ($op == 'clisave') {
     include '../lib/ControllerCustomer.php';
     $CONTROL = new ControllerCustomer();
     echo $CONTROL->getResponseJSON();
-} else if ($op == 'usrsavegeneral') {
+} else if ($op == 'usrsavegeneral' || $op == 'usrget') {
     include '../lib/ControllerUser.php';
     $CONTROL = new ControllerUser();
     echo $CONTROL->getResponseJSON();

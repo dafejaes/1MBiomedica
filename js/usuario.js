@@ -124,35 +124,44 @@ var USUARIO = {
 	    alert('Error: ' + data.output.response.content);
 	}
     },
-    editdata: function(id) {
-	q.op = 'usrget';
-	q.id = id;
-	UTIL.callAjaxRqst(q, this.editdatahandler);
+    */editdata: function(id) {
+		q.op = 'usrget';
+		q.id = id;
+		UTIL.callAjaxRqst(q, this.editdatahandler);
     },
     editdatahandler: function(data) {
-	UTIL.cursorNormal();
-	if (data.output.valid) {
-	    var res = data.output.response[0];
-	    $('#idcli').val(res.idcli);
-	    $('#nombre').val(res.nombre);
-	    $('#apellido').val(res.apellido);
-	    $('#cargo').val(res.cargo);
-	    $('#email').val(res.email);
-	    $('#pass').val(res.pass);
-	    $('#identificacion').val(res.identificacion);
-	    $('#celular').val(res.celular);
-	    $('#telefono').val(res.telefono);
-	    $('#pais').val(res.pais);
-	    $('#departamento').val(res.departamento);
-	    $('#ciudad').val(res.ciudad);
-	    $('#direccion').val(res.direccion);
-	    $('#habilitado').val(res.habilitado);
-	    $("#dialog-form").dialog("open");
-	} else {
-	    alert('Error: ' + data.output.response.content);
-	}
+		UTIL.cursorNormal();
+		if (data.output.valid) {
+			var res = data.output.response[0];
+			$('#nombre').val(res.nombres);
+			$('#apellido').val(res.apellidos);
+			$('#cedula').val(res.cedula);
+			$('#email2').val(res.email);
+			$('#fechanacimiento').val(res.fnacimiento);
+			$('#ciudad').val(res.ciudad);
+			$('#departamento').val(res.departamento);
+			$('#direccion').val(res.direccion);
+			if (res.ing == "1"){
+				$('#ing').prop("checked", true);
+			}else{
+				$('#ing').prop("checked", false);
+			}
+			if(res.lcorreo == "1"){
+				$('#lineacorreo').prop("checked", true);
+			}else{
+				$('#lineacorreo').prop('checked', false);
+			}
+			if(res.coespeciales == "1"){
+				$('#especialco').prop('checked', true);
+			}else{
+				$('#especialco').prop('checked', false);
+			}
+			$("#form_crearusuario").dialog("open");
+		} else {
+			alert('Error: ' + data.output.response.content);
+		}
     },
-    editpermission: function(id) {
+    /*editpermission: function(id) {
 	q.op = 'usrprfget';
 	q.id = id;
 	UTIL.callAjaxRqst(q, this.editpermissionhandler);
@@ -225,7 +234,6 @@ var USUARIO = {
     },
     */savedata: function() {
 		q.op = 'usrsavegeneral';
-		q.id = 0;
 		q.nombre = $("#nombre").val();
 		q.apellido = $("#apellido").val();
 		q.cedula = $("#cedula").val();

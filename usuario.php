@@ -81,7 +81,7 @@ $arrusuarios = $arrusuarios['output']['response'];
 					        <?php
 					                    if ($delete) {
 						    ?>
-	    				            <a href="#" onclick="USUARIO.editdata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-trash"></span></a><span>&nbsp;&nbsp;</span>
+	    				            <a href="#" onclick="USUARIO.editdata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-pencil"></span></a><span>&nbsp;&nbsp;</span>
 						    <?php
 					                    }
 					                    if ($edit) {

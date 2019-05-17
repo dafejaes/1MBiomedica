@@ -71,35 +71,34 @@ class ControllerUser {
         } else {
             if ($this->id > 0) {
                 //se verifica que el email está disponible
-                $q = "SELECT usr_id FROM dmt_usuario WHERE usr_email = '" . $this->email . "' AND usr_id != $this->id ";
-                $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
-                $resultado = mysql_num_rows($con);
+                $q = "SELECT usuarios_id FROM biome1m_usuarios WHERE usuarios_correo = '" . $this->email . "' AND usuarios_id != $this->id ";
+                $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
+                $resultado = mysqli_num_rows($con);
                 if ($resultado == 0) {
                     //actualiza la informacion
-                    $q = "SELECT usr_id FROM dmt_usuario WHERE usr_id = " . $this->id;
-                    $con = mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
-                    while ($obj = mysql_fetch_object($con)) {
-                        $id = $obj->usr_id;
+                    $q = "SELECT usuarios_id FROM biome1m_usuarios WHERE usuarios_id = " . $this->id;
+                    $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
+                    while ($obj = mysqli_fetch_object($con)) {
+                        $id = $obj->usuarios_id;
                         if (strlen($this->pass) > 2) {
                             $pass = $this->UTILITY->make_hash_pass($this->email, $this->pass);
                         }
-                        $table = "dmt_usuario";
+                        $table = "biome1m_usuarios";
                         $arrfieldscomma = array(
-                            'usr_nombre' => $this->nombre,
-                            'usr_apellido' => $this->apellido,
-                            'usr_email' => $this->email,
-                            'usr_pass' => $pass,
-                            'usr_cargo' => $this->cargo,
-                            'usr_identificacion' => $this->identificacion,
-                            'usr_celular' => $this->celular,
-                            'usr_telefono' => $this->telefono,
-                            'usr_pais' => $this->pais,
-                            'usr_departamento' => $this->departamento,
-                            'usr_ciudad' => $this->ciudad,
-                            'usr_direccion' => $this->direccion);
-                        $arrfieldsnocomma = array('dmt_cliente_cli_id' => $this->idcli,'usr_dtcreate' => $this->UTILITY->date_now_server(), 'usr_habilitado' => $this->habilitado);
-                        $q = $this->UTILITY->make_query_update($table, "usr_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
-                        mysql_query($q, $this->conexion) or die(mysql_error() . "***ERROR: " . $q);
+                            'usuarios_nombres' => $this->nombre,
+                            'usuarios_apellidos' => $this->apellido,
+                            'usuarios_cedula' => $this->identificacion,
+                            'usuarios_contrasena' => $pass,
+                            'usuarios_nacimiento' => $this->fechanaci,
+                            'usuarios_ciudad' => $this->ciudad,
+                            'usuarios_departamento' => $this->departamento,
+                            'usuarios_direccion' => $this->direccion,
+                            'usuarios_lineacorreo' => $this->lineacorreo,
+                            'usuarios_correosespeciales' => $this->especialco,
+                            'usuarios_ingeniero' => $this->ingeniero);
+                        $arrfieldsnocomma = array('usuarios_fechamodifi' => $this->UTILITY->date_now_server());
+                        $q = $this->UTILITY->make_query_update($table, "usuarios_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
+                        mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
                         $arrjson = array('output' => array('valid' => true, 'id' => $id));
                     }
                 } else {
@@ -132,7 +131,7 @@ class ControllerUser {
     public function usrget() {
         $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_borrado = 0 ORDER BY usuarios_nombres ASC";
         if ($this->id > 0) {
-            $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_borrado = 0 AND usr_id = " . $this->id;
+            $q = "SELECT * FROM biome1m_usuarios WHERE usuarios_borrado = 0 AND usuarios_id = " . $this->id;
         }
         //if ($this->sdid > 0) {
         //    $q = "SELECT * FROM fir_usuario WHERE fir_sede_sde_id = " . $this->sdid;

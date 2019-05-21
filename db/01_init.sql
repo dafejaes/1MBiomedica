@@ -9,7 +9,11 @@ INSERT INTO `biome1m_perfiles` (`perf_id`, `perf_nombre`, `perf_descripcion`) VA
 (2, 'Usuarios - Crear', NULL),
 (3, 'Usuarios - Editar', NULL),
 (4, 'Usuarios - Eliminar', NULL),
-(5, 'Usuarios - Permisos', NULL );
+(5, 'Usuarios - Permisos', NULL),
+(6, 'Tipo Equipo - Ver', NULL),
+(7, 'Tipo Equipo - Crear', NULL),
+(8, 'Tipo Equipo - Editar', NULL),
+(9, 'Tipo Equipo - Eliminar', NULL);
 
 -- SE INICIALIZAN PERFILES
 INSERT INTO biome1m_usuarios_has_biome1m_perfiles (biome1m_usuarios_usuarios_id, biome1m_perfiles_perf_id) VALUES

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d868cf8d-be79-4cf6-b3d6-3b63b9e93c28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tipoequipo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajax/rqst.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/rqst.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/usuario.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ControllerUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ControllerUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/generic_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/generic_header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,24 +15,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2499">
-              <caret line="147" column="32" selection-start-line="147" selection-start-column="32" selection-end-line="147" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuario.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1734">
@@ -44,12 +24,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/generic_header.php">
+        <entry file="file://$PROJECT_DIR$/db/01_init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="118" selection-start-line="11" selection-start-column="118" selection-end-line="11" selection-end-column="118" />
+            <state relative-caret-position="612">
+              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/include/generic_header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tipoequipo.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -83,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/ControllerUser.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="268" column="66" selection-start-line="268" selection-start-column="66" selection-end-line="268" selection-end-column="66" />
+              <caret line="268" column="83" selection-start-line="268" selection-start-column="83" selection-end-line="268" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -144,8 +138,6 @@
         <option value="$PROJECT_DIR$/equiposgeneral.php" />
         <option value="$PROJECT_DIR$/js/registro.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/db/01_init.sql" />
-        <option value="$PROJECT_DIR$/include/generic_header.php" />
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/js/InicioSesion.js" />
         <option value="$PROJECT_DIR$/include/FormInicio.php" />
@@ -153,6 +145,8 @@
         <option value="$PROJECT_DIR$/ajax/rqst.php" />
         <option value="$PROJECT_DIR$/js/usuario.js" />
         <option value="$PROJECT_DIR$/lib/ControllerUser.php" />
+        <option value="$PROJECT_DIR$/db/01_init.sql" />
+        <option value="$PROJECT_DIR$/include/generic_header.php" />
       </list>
     </option>
   </component>
@@ -232,11 +226,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\1MBiomedica" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="open C:/xampp/htdocs/1MBiomedica" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,7 +286,7 @@
       <workItem from="1557974396686" duration="5091000" />
       <workItem from="1558052754477" duration="11634000" />
       <workItem from="1558368208236" duration="5796000" />
-      <workItem from="1558403964669" duration="2654000" />
+      <workItem from="1558403964669" duration="6594000" />
     </task>
     <task id="LOCAL-00001" summary="Ingreso de la plantilla">
       <created>1555122398857</created>
@@ -414,11 +414,32 @@
       <option name="project" value="LOCAL" />
       <updated>1558069380873</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Lista la gestión de los usuarios">
+      <created>1558406859125</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1558406859125</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Listos los permisos para los equipos">
+      <created>1558410676609</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1558410676609</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Lista la inicialización de los permisos para usuarios predeterminados">
+      <created>1558410839502</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1558410839502</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156902000" />
+    <option name="totallyTimeSpent" value="160842000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,12 +496,12 @@
     <MESSAGE value="Ya los ingenieros podrán crear nuevos usuarios también" />
     <MESSAGE value="se agrega la op 'usrget' para la edición de los usuarios" />
     <MESSAGE value="Lista la edición de usuarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lista la edición de usuarios" />
+    <MESSAGE value="Lista la gestión de los usuarios" />
+    <MESSAGE value="Listos los permisos para los equipos" />
+    <MESSAGE value="Lista la inicialización de los permisos para usuarios predeterminados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lista la inicialización de los permisos para usuarios predeterminados" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-icons_ed9f26_256x240.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/sunny/jquery-ui-1.10.2.custom.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -650,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/01_init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/generic_navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -713,20 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="102" column="54" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/generic_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="118" selection-start-line="11" selection-start-column="118" selection-end-line="11" selection-end-column="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Util.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5865">
@@ -769,7 +769,31 @@
     <entry file="file://$PROJECT_DIR$/lib/ControllerUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="268" column="66" selection-start-line="268" selection-start-column="66" selection-end-line="268" selection-end-column="66" />
+          <caret line="268" column="83" selection-start-line="268" selection-start-column="83" selection-end-line="268" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="102" column="54" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/01_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipoequipo.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/generic_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
         </state>
       </provider>
     </entry>

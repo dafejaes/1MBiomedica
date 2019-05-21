@@ -39,8 +39,14 @@
                                     <li class="divider-vertical"></li>
                                     <?php
                                 }
+                                if($SESSION_DATA->getPermission(6)){
                                     ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
+                                    <li <?php if ($_ACTIVE_SIDEBAR == "tipoequipo") echo 'class="active"'; ?>><a href="tipoequipo.php">Tipo Equipo</a></li>
+                                    <li class="divider-vertical"></li>
+                                    <?php
+                                }
+                                    ?>
+                                <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
                                     <?php
                             }
                             else{

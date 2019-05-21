@@ -108,7 +108,7 @@ function initusuario() {
     
 
 var USUARIO = {
-    /*deletedata: function(id) {
+    deletedata: function(id) {
 	var continuar = confirm('Va a eliminar información de forma irreversible.\n¿Desea continuar?');
 	if (continuar) {
 	    q.op = 'usrdelete';
@@ -124,7 +124,7 @@ var USUARIO = {
 	    alert('Error: ' + data.output.response.content);
 	}
     },
-    */editdata: function(id) {
+    editdata: function(id) {
 		q.op = 'usrget';
 		q.id = id;
 		UTIL.callAjaxRqst(q, this.editdatahandler);
@@ -161,37 +161,38 @@ var USUARIO = {
 			alert('Error: ' + data.output.response.content);
 		}
     },
-    /*editpermission: function(id) {
-	q.op = 'usrprfget';
-	q.id = id;
-	UTIL.callAjaxRqst(q, this.editpermissionhandler);
+    editpermission: function(id) {
+		q.op = 'usrprfget';
+		q.id = id;
+		UTIL.callAjaxRqst(q, this.editpermissionhandler);
     },
     editpermissionhandler: function(data) {
-	UTIL.cursorNormal();
-	if (data.output.valid) {
-	    var ava = data.output.available;
-	    var ass = data.output.assigned;
-	    var chks = '';
-	    for (var i in ava){
-		chks += '<div class="check"><input type="checkbox" name="chk'+ava[i].id+'" id="chk'+ava[i].id+'" value="'+ava[i].id+'" class="text ui-widget-content ui-corner-all" /><span>&nbsp;&nbsp;</span><label>'+ava[i].nombre+'</label></div>';
-	    }
-	    $("#formpermission").empty();
-	    $("#formpermission").append(chks);
-	    $("#formpermission :input").each(function() {
-		var p = $(this).attr('id');
-		for (var j in ass){
-		    var idchk = 'chk'+ass[j].id;
-		    if (p == idchk){
-			$(this).attr('checked', 'true')
-		    }
+		UTIL.cursorNormal();
+		debugger;
+		if (data.output.valid) {
+			var ava = data.output.available;
+			var ass = data.output.assigned;
+			var chks = '';
+			for (var i in ava){
+			chks += '<div class="check"><input type="checkbox" name="chk'+ava[i].id+'" id="chk'+ava[i].id+'" value="'+ava[i].id+'" class="text ui-widget-content ui-corner-all" /><span>&nbsp;&nbsp;</span><label>'+ava[i].nombre+'</label></div>';
+			}
+			$("#formpermission").empty();
+			$("#formpermission").append(chks);
+			$("#formpermission :input").each(function() {
+				var p = $(this).attr('id');
+				for (var j in ass){
+					var idchk = 'chk'+ass[j].id;
+					if (p == idchk){
+					$(this).attr('checked', 'true')
+				}
+			}
+			});
+			$("#dialog-permission").dialog("open");
+		} else {
+			alert('Error: ' + data.output.response.content);
 		}
-	    });
-	    $("#dialog-permission").dialog("open");
-	} else {
-	    alert('Error: ' + data.output.response.content);
-	}
     },
-    getcustomer:function(){
+    /*getcustomer:function(){
 	q.op = 'cliget';
 	UTIL.callAjaxRqst(q, this.getcustomerHandler);
     },
@@ -209,30 +210,30 @@ var USUARIO = {
 	    alert('Error: ' + data.output.response.content);
 	}
     },
-    savepermission: function() {
-	var chk = '';
-	var inputs = document.getElementById('formpermission').getElementsByTagName("input"); // get element by tag name
-	for (var i in inputs) {
-	    if (inputs[i].type == "checkbox") {
-		if($("#"+inputs[i].id).is(':checked')) {  
-		    chk += $("#"+inputs[i].id).val()+'-';
+    */savepermission: function() {
+		var chk = '';
+		var inputs = document.getElementById('formpermission').getElementsByTagName("input"); // get element by tag name
+		for (var i in inputs) {
+			if (inputs[i].type == "checkbox") {
+			if($("#"+inputs[i].id).is(':checked')) {
+				chk += $("#"+inputs[i].id).val()+'-';
+			}
+			}
 		}
-	    }
-	}
-	q.op = 'usrprfsave';
-	q.chk = chk;
-	UTIL.callAjaxRqst(q, this.savepermissionhandler);
+		q.op = 'usrprfsave';
+		q.chk = chk;
+		UTIL.callAjaxRqst(q, this.savepermissionhandler);
     },
     savepermissionhandler: function(data) {
-	UTIL.cursorNormal();
-	if (data.output.valid) {
-	    updateTips('Información guardada correctamente');
-	    $("#dialog-permission").dialog("close");
-	} else {
-	    alert('Error: ' + data.output.response.content);
-	}
+		UTIL.cursorNormal();
+		if (data.output.valid) {
+			updateTips('Información guardada correctamente');
+			$("#dialog-permission").dialog("close");
+		} else {
+			alert('Error: ' + data.output.response.content);
+		}
     },
-    */savedata: function() {
+    savedata: function() {
 		q.op = 'usrsavegeneral';
 		q.nombre = $("#nombre").val();
 		q.apellido = $("#apellido").val();

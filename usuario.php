@@ -86,7 +86,7 @@ $arrusuarios = $arrusuarios['output']['response'];
 					                    }
 					                    if ($edit) {
 						    ?>
-	    				            <a href="#" onclick="USUARIO.deletedata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-pencil"></span></a><span>&nbsp;&nbsp;</span>
+	    				            <a href="#" onclick="USUARIO.deletedata(<?php echo $arrusuarios[$i]['id']; ?>);"><span class="icon-trash"></span></a><span>&nbsp;&nbsp;</span>
 						    <?php
 					                    }
 					                    if ($editpermission && $arrusuarios[$i]['ing']) {

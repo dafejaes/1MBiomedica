@@ -16,6 +16,10 @@ if ($op == 'clisave') {
     include '../lib/ControllerUser.php';
     $CONTROL = new ControllerUser();
     echo $CONTROL->getResponseJSON();
+} else if ($op == 'typeequipsave'){
+    include '../lib/ControllerTypeEquip.php';
+    $CONTROL = new ControllerTypeEquip();
+    echo $CONTROL->getResponseJSON();
 } else {
     echo 'OPERACION NO DISPONIBLE';
 }

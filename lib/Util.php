@@ -437,6 +437,11 @@ class Util {
         return array('output' => array('valid' => false, 'response' => array('code' => '109', 'content' => $content)));
     }
 
+    public function error_ID_already_exist(){
+        return array('output' => array('valid' => false, 'response' => array('code' => '110', 'content' => 'ID del equipo ya existe')));
+
+    }
+
     public function date_now_server() {
         return 'DATE_ADD(NOW(),INTERVAL 2 HOUR)';
     }

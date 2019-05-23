@@ -45,6 +45,12 @@
                                     <li class="divider-vertical"></li>
                                     <?php
                                 }
+                                if($SESSION_DATA->getPermission(10)){
+                                    ?>
+                                    <li <?php if ($_ACTIVE_SIDEBAR == "equipo") echo 'class="active"'; ?>><a href="Equipoing.php">Equipo</a></li>
+                                    <li class="divider-vertical"></li>
+                                    <?php
+                                }
                                     ?>
                                 <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
                                     <?php

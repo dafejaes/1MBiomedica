@@ -84,12 +84,12 @@ $arrustypeequip = $arrustypeequip['output']['response'];
                                 <?php
                                 if ($delete) {
                                     ?>
-                                    <a href="#" onclick="USUARIO.editdata(<?php echo $arrustypeequip[$i]['id']; ?>);"><span class="icon-pencil"></span></a><span>&nbsp;&nbsp;</span>
+                                    <a href="#" onclick="TIPOEQUIP.editdata(<?php echo $arrustypeequip[$i]['id']; ?>);"><span class="icon-pencil"></span></a><span>&nbsp;&nbsp;</span>
                                     <?php
                                 }
                                 if ($edit) {
                                     ?>
-                                    <a href="#" onclick="USUARIO.deletedata(<?php echo $arrustypeequip[$i]['id']; ?>);"><span class="icon-trash"></span></a><span>&nbsp;&nbsp;</span>
+                                    <a href="#" onclick="TIPOEQUIP.deletedata(<?php echo $arrustypeequip[$i]['id']; ?>);"><span class="icon-trash"></span></a><span>&nbsp;&nbsp;</span>
                                     <?php
                                 }
                                 ?>
@@ -103,7 +103,7 @@ $arrustypeequip = $arrustypeequip['output']['response'];
                             <td class="con1"><?php echo $arrustypeequip[$i]['tipo'];?></td>
                             <td class="con0"><?php echo $arrustypeequip[$i]['precio']?></td>
                             <td class="con1"><a href="#" onclick="TIPOEQUIP.MostrarResena(<?php echo $arrustypeequip[$i]['id']; ?>);"><span class="icon-book"></span></a></td>
-                            <td class="con1"><a href="#" onclick="TIPOEQUIP.MostrarFoto(<?php echo $arrustypeequip[$i]['id']; ?>);"><span class="icon-camera"></span></a></td>
+                            <td class="con0"><a href="#" onclick="TIPOEQUIP.MostrarFoto(<?php echo $arrustypeequip[$i]['id']; ?>);"><span class="icon-camera"></span></a></td>
 
                         </tr>
                         <?php
@@ -163,12 +163,16 @@ $arrustypeequip = $arrustypeequip['output']['response'];
         </div>
     </form>
 </div>
-<div id="dialog-permission" title="Permisos">
+<div id="form_mostrarResena" title="Reseña" style="display: none;">
     <p class="validateTips"></p>
-    <form class="form-horizontal" id="formpermission">
-        <div class="check"><input type="checkbox" checked="true" name="chk1" id="chk1" class="text ui-widget-content ui-corner-all" /><span>&nbsp;&nbsp;</span><label>Franquicia</label></div>
+    <form class="form-horizontal" id="formcreate2">
+        <div class="control-group">
+            <label class="control-label">Reseña</label>
+            <div class="controls"><textarea  name="resena2" id="resena2" rows="10" readonly="true"  ></textarea></div>
+        </div>
     </form>
 </div>
+
 <?php include 'include/generic_script.php'; ?>
 <link rel="stylesheet" media="screen" href="css/dynamictable.css" type="text/css" />
 <script type="text/javascript" src="js/jquery/jquery-dataTables.js"></script>

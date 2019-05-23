@@ -168,7 +168,6 @@ var USUARIO = {
     },
     editpermissionhandler: function(data) {
 		UTIL.cursorNormal();
-		debugger;
 		if (data.output.valid) {
 			var ava = data.output.available;
 			var ass = data.output.assigned;

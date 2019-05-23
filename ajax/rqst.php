@@ -16,11 +16,15 @@ if ($op == 'clisave') {
     include '../lib/ControllerUser.php';
     $CONTROL = new ControllerUser();
     echo $CONTROL->getResponseJSON();
-} else if ($op == 'typeequipsave'){
+} else if ($op == 'typeequipsave' || $op == 'typeequipget' || $op == 'typeequipdelete'){
     include '../lib/ControllerTypeEquip.php';
     $CONTROL = new ControllerTypeEquip();
     echo $CONTROL->getResponseJSON();
-} else {
+} else if ($op == 'equipfromtypedelete'){
+    include '../lib/ControllerEquip.php';
+    $CONTROL = new ControllerEquip();
+    echo $CONTROL->getResponseJSON();
+}else {
     echo 'OPERACION NO DISPONIBLE';
 }
 ?>

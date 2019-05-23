@@ -24,7 +24,6 @@ class ControllerTypeEquip {
         $this->ke = isset($rqst['ke']) ? $rqst['ke'] : '';
         $this->lu = isset($rqst['lu']) ? $rqst['lu'] : '';
         $this->ti = isset($rqst['ti']) ? $rqst['ti'] : '';
-
         if($this->op == 'typeequipsave'){
             $this->id2 = isset($rqst['id2']) ? $rqst['id2'] : '';
             $this->clase = isset($rqst['clase']) ? $rqst['clase'] : '';
@@ -36,6 +35,14 @@ class ControllerTypeEquip {
             $this->precio = isset($rqst['precio']) ? $rqst['precio'] : '';
             $this->resena = isset($rqst['resena']) ? $rqst['resena'] : '';
             $this->typeequipsave();
+        }else if ($this->op == 'typeequipget'){
+            $this->typeequipget();
+        }else if ($this->op == 'typeequipdelete'){
+            $this->typeequipdelete();
+        }else if ($this->op == 'noautorizado') {
+            $this->response = $this->UTILITY->error_invalid_authorization();
+        } else {
+            $this->response = $this->UTILITY->error_invalid_method_called();
         }
     }
 
@@ -97,6 +104,19 @@ class ControllerTypeEquip {
         }
         $this->response = ($arrjson);
     }
+
+    public function typeequipdelete(){
+        if ($this->id > 0) {
+            //actualiza la informacion
+            $q = "UPDATE biome1m_tipoequipos SET eqt_borrado = 1 WHERE eqt_id = " . $this->id;
+            mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
+            $arrjson = array('output' => array('valid' => true, 'id' => $this->id));
+        } else {
+            $arrjson = $this->UTILITY->error_missing_data();
+        }
+        $this->response = ($arrjson);
+    }
+
     public function getResponse() {
         $this->CDB->closeConect();
         return $this->response;

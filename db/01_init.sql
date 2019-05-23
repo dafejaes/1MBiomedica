@@ -10,10 +10,14 @@ INSERT INTO `biome1m_perfiles` (`perf_id`, `perf_nombre`, `perf_descripcion`) VA
 (3, 'Usuarios - Editar', NULL),
 (4, 'Usuarios - Eliminar', NULL),
 (5, 'Usuarios - Permisos', NULL),
-(6, 'Tipo Equipo - Ver', NULL),
-(7, 'Tipo Equipo - Crear', NULL),
-(8, 'Tipo Equipo - Editar', NULL),
-(9, 'Tipo Equipo - Eliminar', NULL);
+(6, 'Tipo Equipos - Ver', NULL),
+(7, 'Tipo Equipos - Crear', NULL),
+(8, 'Tipo Equipos - Editar', NULL),
+(9, 'Tipo Equipos - Eliminar', NULL),
+(10, 'Equipos - Ver', NULL),
+(11, 'Equipos - Crear', NULL ),
+(12, 'Equipos - Editar', NULL ),
+(13, 'Equipos - Eliminar', NULL);
 
 -- SE INICIALIZAN PERFILES
 INSERT INTO biome1m_usuarios_has_biome1m_perfiles (biome1m_usuarios_usuarios_id, biome1m_perfiles_perf_id) VALUES
@@ -26,6 +30,10 @@ INSERT INTO biome1m_usuarios_has_biome1m_perfiles (biome1m_usuarios_usuarios_id,
 ('1', '7'),
 ('1', '8'),
 ('1', '9'),
+('1', '10'),
+('1', '11'),
+('1', '12'),
+('1', '13'),
 ('2', '1'),
 ('2', '2'),
 ('2', '3'),
@@ -34,4 +42,8 @@ INSERT INTO biome1m_usuarios_has_biome1m_perfiles (biome1m_usuarios_usuarios_id,
 ('2', '6'),
 ('2', '7'),
 ('2', '8'),
-('2', '9');
+('2', '9'),
+('2', '10'),
+('2', '11'),
+('2', '12'),
+('2', '13');

@@ -75,34 +75,18 @@ function inittipoequip() {
             }
         },
         close: function() {
-            UTIL.clearForm('formcreate1');
-            UTIL.clearForm('formcreate2');
+            UTIL.clearForm('formcreate');
             updateTips('');
         }
     });
 
-    $("#dialog-permission").dialog({
+    $('#form_mostrarResena').dialog({
         autoOpen: false,
-        height: 530,
-        width: 230,
+        height: 320,
+        width: 500,
         modal: true,
-        buttons: {
-            "Guardar": function() {
-                var bValid = true;
-                allFields.removeClass("ui-state-error");
-
-                if (bValid) {
-                    USUARIO.savepermission();
-                    //$(this).dialog("close");
-                }
-            },
-            "Cancelar": function() {
-                UTIL.clearForm('formpermission');
-                $(this).dialog("close");
-            }
-        },
-        close: function() {
-            UTIL.clearForm('formpermission');
+        close: function () {
+            UTIL.clearForm('formcreate2');
             updateTips('');
         }
     });
@@ -114,7 +98,7 @@ var TIPOEQUIP = {
     deletedata: function(id) {
         var continuar = confirm('Va a eliminar información de forma irreversible.\n¿Desea continuar?');
         if (continuar) {
-            q.op = 'usrdelete';
+            q.op = 'typeequipdelete';
             q.id = id;
             UTIL.callAjaxRqst(q, this.deletedatahandler);
         }
@@ -122,13 +106,27 @@ var TIPOEQUIP = {
     deletedatahandler: function(data) {
         UTIL.cursorNormal();
         if (data.output.valid) {
-            window.location = 'usuario.php';
+            TIPOEQUIP.deleteequip();
+        } else {
+            alert('Error: ' + data.output.response.content);
+        }
+    },
+    deleteequip: function(){
+        q.op =  'equipfromtypedelete';
+        q.idtype = q.id;
+        UTIL.callAjaxRqst(q,this.deleteequiphandler);
+    },
+    deleteequiphandler: function(data){
+        UTIL.cursorNormal();
+        debugger;
+        if (data.output.valid) {
+            window.location = 'tipoequipoing.php';
         } else {
             alert('Error: ' + data.output.response.content);
         }
     },
     editdata: function(id) {
-        q.op = 'usrget';
+        q.op = 'typeequipget';
         q.id = id;
         UTIL.callAjaxRqst(q, this.editdatahandler);
     },
@@ -136,61 +134,31 @@ var TIPOEQUIP = {
         UTIL.cursorNormal();
         if (data.output.valid) {
             var res = data.output.response[0];
-            $('#nombre').val(res.nombres);
-            $('#apellido').val(res.apellidos);
-            $('#cedula').val(res.cedula);
-            $('#email2').val(res.email);
-            $('#fechanacimiento').val(res.fnacimiento);
-            $('#ciudad').val(res.ciudad);
-            $('#departamento').val(res.departamento);
-            $('#direccion').val(res.direccion);
-            if (res.ing == "1"){
-                $('#ing').prop("checked", true);
-            }else{
-                $('#ing').prop("checked", false);
-            }
-            if(res.lcorreo == "1"){
-                $('#lineacorreo').prop("checked", true);
-            }else{
-                $('#lineacorreo').prop('checked', false);
-            }
-            if(res.coespeciales == "1"){
-                $('#especialco').prop('checked', true);
-            }else{
-                $('#especialco').prop('checked', false);
-            }
-            $("#form_crearusuario").dialog("open");
+            $('#id').val(res.ID2);
+            $('#clase').val(res.clase);
+            $('#alias').val(res.alias);
+            $('#marca').val(res.marca);
+            $('#modelo').val(res.modelo);
+            $('#clasificacion').val(res.clasificacion);
+            $('#tipo').val(res.tipo);
+            $('#precio').val(res.precio);
+            $('#resena').val(res.resena);
+            $("#form_creartipoequipo").dialog("open");
         } else {
             alert('Error: ' + data.output.response.content);
         }
     },
-    editpermission: function(id) {
-        q.op = 'usrprfget';
+    MostrarResena: function(id) {
+        q.op = 'typeequipget';
         q.id = id;
-        UTIL.callAjaxRqst(q, this.editpermissionhandler);
+        UTIL.callAjaxRqst(q, this.MostrarResenahandler);
     },
-    editpermissionhandler: function(data) {
+    MostrarResenahandler: function(data) {
         UTIL.cursorNormal();
-        debugger;
         if (data.output.valid) {
-            var ava = data.output.available;
-            var ass = data.output.assigned;
-            var chks = '';
-            for (var i in ava){
-                chks += '<div class="check"><input type="checkbox" name="chk'+ava[i].id+'" id="chk'+ava[i].id+'" value="'+ava[i].id+'" class="text ui-widget-content ui-corner-all" /><span>&nbsp;&nbsp;</span><label>'+ava[i].nombre+'</label></div>';
-            }
-            $("#formpermission").empty();
-            $("#formpermission").append(chks);
-            $("#formpermission :input").each(function() {
-                var p = $(this).attr('id');
-                for (var j in ass){
-                    var idchk = 'chk'+ass[j].id;
-                    if (p == idchk){
-                        $(this).attr('checked', 'true')
-                    }
-                }
-            });
-            $("#dialog-permission").dialog("open");
+            var res = data.output.response[0];
+            $('#resena2').val(res.resena);
+            $("#form_mostrarResena").dialog("open");
         } else {
             alert('Error: ' + data.output.response.content);
         }
@@ -246,7 +214,7 @@ var TIPOEQUIP = {
         q.clasificacion = $("#clasificacion").val();
         q.tipo = $("#tipo").val();
         q.precio = $("#precio").val();
-        q.resena = $("#direccion").val();
+        q.resena = $("#resena").val();
         UTIL.callAjaxRqst(q, this.savedatahandler);
     },
     savedatahandler: function(data) {

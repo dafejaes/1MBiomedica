@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d868cf8d-be79-4cf6-b3d6-3b63b9e93c28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/tipoequipo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ControllerTypeEquip.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tipoequipoing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Equipoing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ControllerEquip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serviciosing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/softwareing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax/rqst.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/rqst.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/generic_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/generic_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Util.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Util.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tipoequipo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/01_init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/01_init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tipoequipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tipoequipo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/usuario.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ControllerTypeEquip.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ControllerTypeEquip.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tipoequipoing.php" beforeDir="false" afterPath="$PROJECT_DIR$/tipoequipoing.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,76 +23,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/app.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/dynamictable.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/usuario.js">
+        <entry file="file://$PROJECT_DIR$/usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding>
-                <element signature="e#124#130#0" expanded="true" />
-                <element signature="e#130#136#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1717">
+              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/rqst.php">
+        <entry file="file://$PROJECT_DIR$/db/01_init.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="399">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/ControllerTypeEquip.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Util.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="439" column="20" selection-start-line="439" selection-start-column="20" selection-end-line="439" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/ControllerUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-816">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/global.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2378" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Equipoing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tipoequipoing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="102" column="77" selection-start-line="102" selection-start-column="77" selection-end-line="102" selection-end-column="77" />
+            <state relative-caret-position="425">
+              <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,12 +65,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tipoequipo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="255" column="44" selection-start-line="255" selection-start-column="44" selection-end-line="255" selection-end-column="44" />
+            <state relative-caret-position="1139">
+              <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ajax/rqst.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/usuario.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
               <folding>
                 <element signature="e#124#130#0" expanded="true" />
                 <element signature="e#130#136#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ControllerTypeEquip.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1785">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ControllerEquip.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="76" column="2" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ControllerUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="169" column="8" lean-forward="true" selection-start-line="169" selection-start-column="8" selection-end-line="177" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -124,6 +137,7 @@
       <find>usrl</find>
       <find>q.op</find>
       <find>no</find>
+      <find>permi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,16 +160,17 @@
         <option value="$PROJECT_DIR$/js/InicioSesion.js" />
         <option value="$PROJECT_DIR$/include/FormInicio.php" />
         <option value="$PROJECT_DIR$/usuario.php" />
-        <option value="$PROJECT_DIR$/db/01_init.sql" />
         <option value="$PROJECT_DIR$/tipoequipo.php" />
         <option value="$PROJECT_DIR$/include/generic_header.php" />
-        <option value="$PROJECT_DIR$/ajax/rqst.php" />
         <option value="$PROJECT_DIR$/lib/ControllerUser.php" />
         <option value="$PROJECT_DIR$/lib/Util.php" />
         <option value="$PROJECT_DIR$/js/usuario.js" />
-        <option value="$PROJECT_DIR$/js/tipoequipo.js" />
-        <option value="$PROJECT_DIR$/lib/ControllerTypeEquip.php" />
         <option value="$PROJECT_DIR$/tipoequipoing.php" />
+        <option value="$PROJECT_DIR$/lib/ControllerTypeEquip.php" />
+        <option value="$PROJECT_DIR$/ajax/rqst.php" />
+        <option value="$PROJECT_DIR$/lib/ControllerEquip.php" />
+        <option value="$PROJECT_DIR$/js/tipoequipo.js" />
+        <option value="$PROJECT_DIR$/db/01_init.sql" />
       </list>
     </option>
   </component>
@@ -176,6 +191,21 @@
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
               <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
@@ -265,7 +295,7 @@
       <workItem from="1558052754477" duration="11634000" />
       <workItem from="1558368208236" duration="5796000" />
       <workItem from="1558403964669" duration="6756000" />
-      <workItem from="1558414515322" duration="16675000" />
+      <workItem from="1558414515322" duration="33131000" />
     </task>
     <task id="LOCAL-00001" summary="Ingreso de la plantilla">
       <created>1555122398857</created>
@@ -421,11 +451,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558414334870</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Lista la visualización de nuevos tipos de equipos">
+      <created>1558465785991</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1558465785991</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177679000" />
+    <option name="totallyTimeSpent" value="194135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,7 +474,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.32223904" />
@@ -486,40 +523,10 @@
     <MESSAGE value="Listos los permisos para los equipos" />
     <MESSAGE value="Lista la inicialización de los permisos para usuarios predeterminados" />
     <MESSAGE value="Empieza la gestión de los tipos de Equipos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empieza la gestión de los tipos de Equipos" />
+    <MESSAGE value="Lista la visualización de nuevos tipos de equipos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lista la visualización de nuevos tipos de equipos" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/images/logoS24.png" />
-    <entry file="file://$PROJECT_DIR$/images/cabezote.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/phpmailer/test/contents.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/phpmailer/test/phpmailerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3247">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/phpmailer/test/test.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/phpmailer/test/test_callback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-956" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/phpmailer/test/testemail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/phpmailer/class.phpmailer.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/phpmailer/class.pop3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -614,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/01_init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Equipos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -660,13 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="43" column="132" selection-start-line="43" selection-start-column="132" selection-end-line="43" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="12" selection-end-line="189" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -711,17 +704,56 @@
         <state relative-caret-position="-2378" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/rqst.php">
+    <entry file="file://$PROJECT_DIR$/lib/Util.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="-116">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/softwareing.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lib/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1236">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/server/php/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/server/php/UploadHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5457" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/js/vendor/jquery.ui.widget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serviciosing.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="279">
+          <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
           <folding>
             <element signature="e#124#130#0" expanded="true" />
             <element signature="e#130#136#0" expanded="true" />
@@ -729,42 +761,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Util.php">
+    <entry file="file://$PROJECT_DIR$/usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="439" column="20" selection-start-line="439" selection-start-column="20" selection-end-line="439" selection-end-column="20" />
+        <state relative-caret-position="-1717">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/tipoequipo.js">
+    <entry file="file://$PROJECT_DIR$/tipoequipoing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="255" column="44" selection-start-line="255" selection-start-column="44" selection-end-line="255" selection-end-column="44" />
+          <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
           <folding>
-            <element signature="e#124#130#0" expanded="true" />
-            <element signature="e#130#136#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ControllerUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="204">
+          <caret line="169" column="8" lean-forward="true" selection-start-line="169" selection-start-column="8" selection-end-line="177" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/rqst.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ControllerTypeEquip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
+        <state relative-caret-position="-1785">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tipoequipoing.php">
+    <entry file="file://$PROJECT_DIR$/lib/ControllerEquip.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="102" column="77" selection-start-line="102" selection-start-column="77" selection-end-line="102" selection-end-column="77" />
+        <state relative-caret-position="478">
+          <caret line="76" column="2" selection-start-line="76" selection-start-column="2" selection-end-line="76" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tipoequipo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/01_init.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Equipoing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

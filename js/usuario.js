@@ -72,8 +72,7 @@ function initusuario() {
 			}
 	},
 	close: function() {
-	    UTIL.clearForm('formcreate1');
-	    UTIL.clearForm('formcreate2');
+	    UTIL.clearForm('formcreate');
 	    updateTips('');
 	}
     });

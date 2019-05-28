@@ -46,6 +46,7 @@ function inittipoequip() {
                 clasificacion = $("#clasificacion");
                 tipo = $("#tipo");
                 precio = $("#precio");
+                bValid = true;
                 bValid = bValid && checkLength(id2, "ID", 3, 30);
                 if (bValid) {
                     bValid = bValid && checkLength(clase, "clase", 3, 30);

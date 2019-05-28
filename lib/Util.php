@@ -442,6 +442,10 @@ class Util {
 
     }
 
+    public function error_ID_dosent_exist(){
+        return array('output' => array('valid' => false, 'response' => array('code' => '111', 'content' => 'ID del equipo no existe')));
+
+    }
     public function date_now_server() {
         return 'DATE_ADD(NOW(),INTERVAL 2 HOUR)';
     }

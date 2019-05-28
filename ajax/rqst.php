@@ -20,7 +20,7 @@ if ($op == 'clisave') {
     include '../lib/ControllerTypeEquip.php';
     $CONTROL = new ControllerTypeEquip();
     echo $CONTROL->getResponseJSON();
-} else if ($op == 'equipfromtypedelete'){
+} else if ($op == 'equipfromtypedelete' || $op = 'equipsave' || $op == 'equipget' || $op == 'equipdelete'){
     include '../lib/ControllerEquip.php';
     $CONTROL = new ControllerEquip();
     echo $CONTROL->getResponseJSON();

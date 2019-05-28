@@ -44,6 +44,7 @@ function initusuario() {
 				departamento = $("#departamento");
 				direccion = $("#direccion");
 				lineaco = $("#lineacorreo").val();
+				bValid = true;
 				bValid = bValid && checkLength(nombre, "nombres", 3, 30);
 				UTIL.isEmail($("#email2"));
 				if (bValid) {

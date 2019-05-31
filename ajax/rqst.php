@@ -28,6 +28,10 @@ if ($op == 'clisave') {
     include '../lib/ControllerSoftware.php';
     $CONTROL = new ControllerSoftware();
     echo $CONTROL->getResponseJSON();
+} else if ($op == 'servsave' || $op == 'servget' || $op == 'servdelete'){
+    include '../lib/ControllerServices.php';
+    $CONTROL = new ControllerServices();
+    echo $CONTROL->getResponseJSON();
 } else {
     echo 'OPERACION NO DISPONIBLE';
 }

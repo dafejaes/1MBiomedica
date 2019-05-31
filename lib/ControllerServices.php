@@ -8,7 +8,7 @@ include 'Util.php';
  * @author Daniel Felipe Jaramillo
  */
 
-class ControllerSoftware
+class ControllerServices
 {
     private $conexion, $CDB, $op, $id, $euid, $sdid;
     private $UTILITY;
@@ -25,14 +25,14 @@ class ControllerSoftware
         $this->ke = isset($rqst['ke']) ? $rqst['ke'] : '';
         $this->lu = isset($rqst['lu']) ? $rqst['lu'] : '';
         $this->ti = isset($rqst['ti']) ? $rqst['ti'] : '';
-        if($this->op == 'softwsave'){
+        if($this->op == 'servsave'){
             $this->nombre = isset($rqst['nombre']) ? $rqst['nombre'] : '';
             $this->archivo = isset($rqst['archivo']) ? $rqst['archivo'] : '';
-            $this->softwsave();
-        }else if ($this->op == 'softwget'){
-            $this->softwareget();
-        }else if ($this->op == 'softwdelete'){
-            $this->softwdelete();
+            $this->servsave();
+        }else if ($this->op == 'servget'){
+            $this->servicesget();
+        }else if ($this->op == 'servdelete'){
+            $this->servdelete();
         }else if ($this->op == 'noautorizado') {
             $this->response = $this->UTILITY->error_invalid_authorization();
         } else {
@@ -40,19 +40,19 @@ class ControllerSoftware
         }
     }
 
-    public function softwareget(){
-        $q = "SELECT * FROM biome1m_software WHERE softw_borrado = 0 ORDER BY softw_nombre ASC";
+    public function servicesget(){
+        $q = "SELECT * FROM biome1m_servicios WHERE serv_borrado = 0 ORDER BY serv_nombre ASC";
         if ($this->id > 0) {
-            $q = "SELECT * FROM biome1m_software WHERE softw_borrado = 0 AND softw_id = " . $this->id;
+            $q = "SELECT * FROM biome1m_servicios WHERE serv_borrado = 0 AND serv_id = " . $this->id;
         }
         $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
         $resultado = mysqli_num_rows($con);
         $arr = array();
         while ($obj = mysqli_fetch_object($con)) {
             $arr[] = array(
-                'id' => $obj->softw_id,
-                'nombre' => $obj->softw_nombre,
-                'archivo' => $obj->softw_archivo);
+                'id' => $obj->serv_id,
+                'nombre' => $obj->serv_nombre,
+                'archivo' => $obj->serv_archivo);
         }
         if ($resultado > 0) {
             $arrjson = array('output' => array('valid' => true, 'response' => $arr));
@@ -62,27 +62,27 @@ class ControllerSoftware
         $this->response = ($arrjson);
     }
 
-    public function softwsave(){
+    public function servsave(){
         $id = 0;
         $resultado = 0;
         if ($this->id > 0 ){
             //Se verifica si ya existe el nombre
-            $q = "SELECT softw_id FROM biome1m_software WHERE softw_nombre = " . $this->nombre;
+            $q = "SELECT serv_id FROM biome1m_servicios WHERE serv_nombre = " . $this->nombre;
             $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
             $resultado = mysqli_num_rows($con);
             if($resultado == 0){
                 $obj = mysqli_fetch_object($con);
                 //actualiza la informacion
-                $q = "SELECT softw_id FROM biome1m_software WHERE softw_id = " . $this->id;
+                $q = "SELECT serv_id FROM biome1m_servicios WHERE serv_id = " . $this->id;
                 $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
                 while ($obj = mysqli_fetch_object($con)) {
-                    $id = $obj->softw_id;
-                    $table = "biome1m_software";
+                    $id = $obj->serv_id;
+                    $table = "biome1m_servicios";
                     $arrfieldscomma = array(
-                        'softw_nombre' => $this->nombre,
-                        'softw_archivo' => $this->archivo);
-                    $arrfieldsnocomma = array('softw_actualizado' => $this->UTILITY->date_now_server());
-                    $q = $this->UTILITY->make_query_update($table, "softw_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
+                        'serv_nombre' => $this->nombre,
+                        'serv_archivo' => $this->archivo);
+                    $arrfieldsnocomma = array('serv_actualizado' => $this->UTILITY->date_now_server());
+                    $q = $this->UTILITY->make_query_update($table, "serv_id = '$id'", $arrfieldscomma, $arrfieldsnocomma);
                     mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
                     $arrjson = array('output' => array('valid' => true, 'id' => $id));
                 }
@@ -91,11 +91,11 @@ class ControllerSoftware
             }
         }else{
             //Se verifica si ya existe el nombre
-            $q = "SELECT softw_id FROM biome1m_software WHERE softw_nombre = '" . $this->nombre . "'";
+            $q = "SELECT serv_id FROM biome1m_servicios WHERE serv_nombre = '" . $this->nombre . "'";
             $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
             $resultado = mysqli_num_rows($con);
             if($resultado == 0){
-                $q = "INSERT INTO biome1m_software(softw_nombre, softw_archivo, softw_actualizado, softw_borrado) 
+                $q = "INSERT INTO biome1m_servicios(serv_nombre, serv_archivo, serv_actualizado, serv_borrado) 
                       VALUES ('" . $this->nombre . "','" . $this->archivo . "'," . $this->UTILITY->date_now_server() . "," . 0 . ")";
                 mysqli_query($this->conexion, $q) or die(mysqli_error() . "***ERROR: " . $q);
                 $id = mysqli_insert_id($this->conexion);
@@ -108,8 +108,8 @@ class ControllerSoftware
 
     }
 
-    public function nummsgsoftw($id){
-        $q = "SELECT msgsoftw_id FROM biome1m_msgsoftw WHERE biome1m_software_softw_id = " . $id;
+    public function nummsgserv($id){
+        $q = "SELECT msgserv_id FROM biome1m_msgserv WHERE biome1m_servicios_serv_id = " . $id;
         $con = mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
         $resultado = mysqli_num_rows($con);
         $arr[0] = array(
@@ -118,10 +118,10 @@ class ControllerSoftware
         $this->response = ($arrjson);
     }
 
-    public function softwdelete(){
+    public function servdelete(){
         if ($this->id > 0) {
             //actualiza la informacion
-            $q = "UPDATE biome1m_software SET softw_borrado = 1 WHERE softw_id = " . $this->id;
+            $q = "UPDATE biome1m_servicios SET serv_borrado = 1 WHERE serv_id = " . $this->id;
             mysqli_query($this->conexion, $q) or die(mysqli_error($this->conexion) . "***ERROR: " . $q);
             $arrjson = array('output' => array('valid' => true, 'id' => $this->id));
         } else {

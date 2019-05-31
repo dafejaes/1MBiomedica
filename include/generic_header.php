@@ -59,7 +59,7 @@
                                 }
                                 if($SESSION_DATA->getPermission(18)){
                                     ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "servicio") echo 'class="active"'; ?>><a href="servicioing.php">Servicios</a></li>
+                                    <li <?php if ($_ACTIVE_SIDEBAR == "servicio") echo 'class="active"'; ?>><a href="serviciosing.php">Servicios</a></li>
                                     <li class="divider-vertical"></li>
                                     <?php
                                 }

@@ -20,11 +20,15 @@ if ($op == 'clisave') {
     include '../lib/ControllerTypeEquip.php';
     $CONTROL = new ControllerTypeEquip();
     echo $CONTROL->getResponseJSON();
-} else if ($op == 'equipfromtypedelete' || $op = 'equipsave' || $op == 'equipget' || $op == 'equipdelete'){
+} else if ($op == 'equipfromtypedelete' || $op == 'equipsave' || $op == 'equipget' || $op == 'equipdelete'){
     include '../lib/ControllerEquip.php';
     $CONTROL = new ControllerEquip();
     echo $CONTROL->getResponseJSON();
-}else {
+} else if ($op == 'softwsave' || $op == 'softwget' || $op == 'softwdelete'){
+    include '../lib/ControllerSoftware.php';
+    $CONTROL = new ControllerSoftware();
+    echo $CONTROL->getResponseJSON();
+} else {
     echo 'OPERACION NO DISPONIBLE';
 }
 ?>

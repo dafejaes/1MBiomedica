@@ -99,7 +99,7 @@ $COMPRAS = new ControllerEquip();
                             <td class="con1"><?php echo $arrusequip[$i]['placa']; ?></td>
                             <td class="con0"><?php echo $arrusequip[$i]['codigo']?></td>
                             <td class="con1"><?php echo $arrusequip[$i]['registroINVIMA'];?></td>
-                            <td class="con0"><?php if($arrusequip[$i]['vendido'] == 1){echo 'Sí';}else{echo 'No';}?></td>.
+                            <td class="con0"><?php if($arrusequip[$i]['vendido'] == 1){echo 'Sí';}else{echo 'No';}?></td>
 
                         </tr>
                         <?php
@@ -114,7 +114,7 @@ $COMPRAS = new ControllerEquip();
 <footer id="footer_wrap">
     <?php include 'include/generic_footer.php'; ?>
 </footer>
-<div id="form_crearequipo" title="Registro de Tipo de Equipo" style="display: none;">
+<div id="form_crearequipo" title="Equipo" style="display: none;">
     <p class="validateTips"></p>
     <form class="form-horizontal" id="formcreate">
         <div class="control-group">

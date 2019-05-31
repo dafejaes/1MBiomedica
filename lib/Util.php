@@ -404,6 +404,9 @@ class Util {
     public function error_invalid_method_called() {
         return array('output' => array('valid' => false, 'response' => array('code' => '101', 'content' => ' Metodo no existe.')));
     }
+    public function error_invalid_method2_called() {
+        return array('output' => array('valid' => false, 'response' => array('code' => '2345235', 'content' => ' Metodo no existe.')));
+    }
 
     public function error_invalid_authorization() {
         return array('output' => array('valid' => false, 'response' => array('code' => '102', 'content' => ' No se encuentra autorizado para ejecutar la operación.')));
@@ -444,6 +447,11 @@ class Util {
 
     public function error_ID_dosent_exist(){
         return array('output' => array('valid' => false, 'response' => array('code' => '111', 'content' => 'ID del equipo no existe')));
+
+    }
+
+    public function error_name_already_exist(){
+        return array('output' => array('valid' => false, 'response' => array('code' => '112', 'content' => 'El nombre ya existe')));
 
     }
     public function date_now_server() {

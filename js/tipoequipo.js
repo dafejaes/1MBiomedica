@@ -119,7 +119,6 @@ var TIPOEQUIP = {
     },
     deleteequiphandler: function(data){
         UTIL.cursorNormal();
-        debugger;
         if (data.output.valid) {
             window.location = 'tipoequipoing.php';
         } else {

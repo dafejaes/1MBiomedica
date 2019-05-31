@@ -51,6 +51,18 @@
                                     <li class="divider-vertical"></li>
                                     <?php
                                 }
+                                if($SESSION_DATA->getPermission(14)){
+                                    ?>
+                                    <li <?php if ($_ACTIVE_SIDEBAR == "software") echo 'class="active"'; ?>><a href="softwareing.php">Software</a></li>
+                                    <li class="divider-vertical"></li>
+                                    <?php
+                                }
+                                if($SESSION_DATA->getPermission(18)){
+                                    ?>
+                                    <li <?php if ($_ACTIVE_SIDEBAR == "servicio") echo 'class="active"'; ?>><a href="servicioing.php">Servicios</a></li>
+                                    <li class="divider-vertical"></li>
+                                    <?php
+                                }
                                     ?>
                                 <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
                                     <?php

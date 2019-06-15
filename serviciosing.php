@@ -121,11 +121,12 @@ $MENSAJES = new ControllerServices();
         </div>
     </form>
 </div>
-
+<?php include 'include/FormInicio.php';?>
 <?php include 'include/generic_script.php'; ?>
 <link rel="stylesheet" media="screen" href="css/dynamictable.css" type="text/css" />
 <script type="text/javascript" src="js/jquery/jquery-dataTables.js"></script>
 <script type="text/javascript" src="js/lib/data-sha1.js"></script>
 <script type="text/javascript" src="js/service.js"></script>
+<script type="text/javascript" src="js/InicioSesion.js"></script>
 </body>
 </html>

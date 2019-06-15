@@ -9,8 +9,8 @@
                 if (isset($_SESSION['usuario'])){
                     ?>
                     <img src="images/64572.png" width="50px" alt="FueraDeSesion"/>
-                    <select name="informacion" id="informacion" class="text ui-widget-content ui-corner-all" onclick="">
-                        <option value="1"><?php echo $_SESSION['usuario']['nombres'] . $_SESSION['usuario']['apellidos']?></option>
+                    <select name="informacion" id="informacion" class="text ui-widget-content ui-corner-all" onchange="INICIO.opciones(<?php echo $_SESSION['usuario']['id']; ?>);">
+                        <option value="1"><?php echo $_SESSION['usuario']['nombres'] . " " .  $_SESSION['usuario']['apellidos']?></option>
                         <option value="2">Actualizar datos</option>
                         <option value="3">Salir</option>
                     </select>

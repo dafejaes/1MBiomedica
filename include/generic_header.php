@@ -1,5 +1,5 @@
-<div align="left" class="divider" style="color: ">
-    <table width="1365px"
+<div align="left" style="color: ">
+    <table width="1365px">
         <tr>
             <td rowspan="2" width="685px" bgcolor="#add8e6">
                 <img src="images/cabezote.jpg" width="90px" alt="1mbiomedica"/>
@@ -28,64 +28,53 @@
         </tr>
         <tr>
             <td bgcolor="#add8e6">
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <ul class="nav">
-                            <?php
-                            if (isset($_SESSION['usuario']) && $_SESSION['usuario']['ingeniero'] == 1) {
-                                if($SESSION_DATA->getPermission(1)){
-                                    ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "usuario") echo 'class="active"'; ?>><a href="usuario.php">Usuarios</a></li>
-                                    <li class="divider-vertical"></li>
-                                    <?php
-                                }
-                                if($SESSION_DATA->getPermission(6)){
-                                    ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "tipoequipo") echo 'class="active"'; ?>><a href="tipoequipoing.php">Tipo Equipo</a></li>
-                                    <li class="divider-vertical"></li>
-                                    <?php
-                                }
-                                if($SESSION_DATA->getPermission(10)){
-                                    ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "equipo") echo 'class="active"'; ?>><a href="Equipoing.php">Equipo</a></li>
-                                    <li class="divider-vertical"></li>
-                                    <?php
-                                }
-                                if($SESSION_DATA->getPermission(14)){
-                                    ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "software") echo 'class="active"'; ?>><a href="softwareing.php">Software</a></li>
-                                    <li class="divider-vertical"></li>
-                                    <?php
-                                }
-                                if($SESSION_DATA->getPermission(18)){
-                                    ?>
-                                    <li <?php if ($_ACTIVE_SIDEBAR == "servicio") echo 'class="active"'; ?>><a href="serviciosing.php">Servicios</a></li>
-                                    <li class="divider-vertical"></li>
-                                    <?php
-                                }
-                                    ?>
-                                <li <?php if ($_ACTIVE_SIDEBAR == "salir") echo 'class="active"'; ?>><a href="logout.php">Salir</a></li>
-                                    <?php
-                            }
-                            else{
+                <div id="header2">
+                    <ul class="navi">
+                        <?php
+                        if (isset($_SESSION['usuario']) && $_SESSION['usuario']['ingeniero'] == 1) {
+                            if($SESSION_DATA->getPermission(1)){
                                 ?>
-                                <li <?php if ($_ACTIVE_SIDEBAR == "inicio") echo 'class="active"'; ?>><a href="index.php">Inicio</a></li>
-                                <li class="divider-vertical"></li>
-                                <li <?php if ($_ACTIVE_SIDEBAR == "equiposgeneral") echo 'class="active"'; ?>><a href="equiposgeneral.php">Equipos</a></li>
-                                <li class="divider-vertical"></li>
-                                <li <?php if ($_ACTIVE_SIDEBAR == "softwaregeneral") echo 'class="active"'; ?>><a href="softwaregeneral.php">Software</a></li>
-                                <li class="divider-vertical"></li>
-                                <li <?php if ($_ACTIVE_SIDEBAR == "serviciosgeneral") echo 'class="active"'; ?>><a href="serviciosgeneral.php">Servicios</a></li>
-                                <li class="divider-vertical"></li>
-                                <li <?php if ($_ACTIVE_SIDEBAR == "informaciongeneral") echo 'class="active"'; ?>><a href="informaciongeneral.php">Información</a></li>
-                                <li class="divider-vertical"></li>
-                                <li <?php if ($_ACTIVE_SIDEBAR == "novedadesgeneral") echo 'class="active"'; ?>><a href="novedadesgeneral.php">Novedades</a></li>
-
+                                <li <?php if ($_ACTIVE_SIDEBAR == "usuario") echo 'class="active"'; ?>><a href="usuario.php">Usuarios</a></li>
                                 <?php
                             }
+                            if($SESSION_DATA->getPermission(6)){
+                                ?>
+                                <li <?php if ($_ACTIVE_SIDEBAR == "tipoequipo") echo 'class="active"'; ?>><a href="tipoequipoing.php">Tipo Equipo</a></li>
+                                <?php
+                            }
+                            if($SESSION_DATA->getPermission(10)){
+                                ?>
+                                <li <?php if ($_ACTIVE_SIDEBAR == "equipo") echo 'class="active"'; ?>><a href="Equipoing.php">Equipo</a></li>
+                                <?php
+                            }
+                            if($SESSION_DATA->getPermission(14)){
+                                ?>
+                                <li <?php if ($_ACTIVE_SIDEBAR == "software") echo 'class="active"'; ?>><a href="softwareing.php">Software</a></li>
+                                <?php
+                            }
+                            if($SESSION_DATA->getPermission(18)){
+                                ?>
+                                <li <?php if ($_ACTIVE_SIDEBAR == "servicio") echo 'class="active"'; ?>><a href="serviciosing.php">Servicios</a></li>
+                                <?php
+                            }
+                        }else{
                             ?>
-
-                        </ul>
+                            <li <?php if ($_ACTIVE_SIDEBAR == "inicio") echo 'class="active"'; ?>><a href="index.php">Inicio</a></li>
+                            <li <?php if ($_ACTIVE_SIDEBAR == "equiposgeneral") echo 'class="active"'; ?>><a href="">Equipos</a>
+                                <ul>
+                                    <li><a href="todosequipos.php">Todos los productos</a></li>
+                                    <li><a href="informacion.php">Informacion de compra</a></li>
+                                    <li><a href="contactenos.php">Contáctenos</a></li>
+                                </ul>
+                            </li>
+                            <li <?php if ($_ACTIVE_SIDEBAR == "softwaregeneral") echo 'class="active"'; ?>><a href="softwaregeneral.php">Software</a></li>
+                            <li <?php if ($_ACTIVE_SIDEBAR == "serviciosgeneral") echo 'class="active"'; ?>><a href="serviciosgeneral.php">Servicios</a></li>
+                            <li <?php if ($_ACTIVE_SIDEBAR == "informaciongeneral") echo 'class="active"'; ?>><a href="informaciongeneral.php">Información</a></li>
+                            <li <?php if ($_ACTIVE_SIDEBAR == "novedadesgeneral") echo 'class="active"'; ?>><a href="novedadesgeneral.php">Novedades</a></li>
+                            <?php
+                        }
+                            ?>
+                    </ul>
                         <!-- <ul class="nav pull-right">
                             <li><a href="logout.php">Salir</a></li>
                             <li class="divider-vertical"></li>
@@ -97,7 +86,6 @@
                                                 <li><a href="#">Cerrar Sesión</a></li>
                                             </ul>
                                         </li>-->
-                    </div>
                     <!--    <ul class="breadcrumb">
                             <li><a href="clientes.php">Franquicias</a> <span class="divider">/</span></li>
                             <li class="active">Ver</li>

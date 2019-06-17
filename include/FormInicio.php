@@ -62,7 +62,7 @@
         </div>
         <div class="control-group">
             <label class="control-label">Repita Contraseña*</label>
-            <div class="controls"><input type="password" name="password7" id="password6" class="text ui-widget-content ui-corner-all" /></div>
+            <div class="controls"><input type="password" name="password7" id="password7" class="text ui-widget-content ui-corner-all" /></div>
         </div>
         <div class="control-group">
             <label class="control-label">Fecha Nacimiento</label>

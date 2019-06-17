@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/global.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
 <link rel="stylesheet" media="screen" href="css/sunny/jquery-ui-1.10.2.custom.min.css" type="text/css" />
+<link rel="stylesheet" href="css/picture.css" />
 <!--FIN styles-->
 <!--fonst-->
 <link href='http://fonts.googleapis.com/css?family=Lilita+One' rel='stylesheet' type='text/css'>

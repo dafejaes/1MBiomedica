@@ -233,7 +233,11 @@ var TIPOEQUIP = {
             reader.readAsDataURL(archivo );
             reader.onloadend = function () {
                 document.getElementById("img").src = reader.result;
+                let peticion = new XMLHttpRequest();
+                peticion.open('post', '	subir.php');
+                debugger;
             }
+
         }
     }
 }

@@ -172,6 +172,26 @@ $arrusuarios = $arrusuarios['output']['response'];
                     <label class="control-label">¿Desea recibir correos especiales?</label>
                     <div class="controls"><input type="checkbox" name="especialco" id="especialco" value = "especialco" class="text ui-widget-content ui-corner-all" /></div>
                 </div>
+                <div class="control-group">
+                    <label class="control-label">Foto: </label>
+                    <div class="controls">
+                        <form action="" id="form_subir">
+                            <div class="form-1-2">
+                                <input type="file" name="fotoperfil" required>
+                            </div>
+                            <div class="barra">
+                                <div class="barra_azul" id="barra_estado">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="acciones">
+                                <input type="submit" class="btn" value="Enviar">
+                                <input type="button" class="cancel" id="cancelar" value="Cancelar">
+                            </div>
+                        </form>
+                    </div>
+                    <div
+                </div>
             </form>
         </div>
 	    <div id="dialog-permission" title="Permisos">

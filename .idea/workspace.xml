@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d868cf8d-be79-4cf6-b3d6-3b63b9e93c28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/picture.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/archivos/usuarioarchi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subir.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equipoing.php" beforeDir="false" afterPath="$PROJECT_DIR$/Equipoing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/00_create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/00_create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equiposgeneral.php" beforeDir="false" afterPath="$PROJECT_DIR$/equiposgeneral.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/FormInicio.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/FormInicio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/generic_head.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/generic_head.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/generic_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/generic_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/InicioSesion.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/InicioSesion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serviciosing.php" beforeDir="false" afterPath="$PROJECT_DIR$/serviciosing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwareing.php" beforeDir="false" afterPath="$PROJECT_DIR$/softwareing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tipoequipoing.php" beforeDir="false" afterPath="$PROJECT_DIR$/tipoequipoing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tipoequipo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tipoequipo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/usuario.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,19 +24,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/softwareing.php">
+        <entry file="file://$PROJECT_DIR$/include/generic_head.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
+            <state relative-caret-position="391">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tipoequipoing.php">
+        <entry file="file://$PROJECT_DIR$/js/usuario.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="174" column="25" selection-start-line="174" selection-end-line="175" />
+            <state relative-caret-position="294">
+              <caret line="281" column="29" selection-start-line="281" selection-start-column="29" selection-end-line="281" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -43,75 +44,73 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1957">
-              <caret line="182" column="49" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
+            <state relative-caret-position="382">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/usuario.js">
+        <entry file="file://$PROJECT_DIR$/include/generic_header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+            <state relative-caret-position="357">
+              <caret line="66" column="77" selection-start-line="66" selection-start-column="77" selection-end-line="66" selection-end-column="77" />
               <folding>
-                <element signature="e#124#130#0" expanded="true" />
-                <element signature="e#130#136#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="17471" column="17" selection-start-line="17471" selection-start-column="17" selection-end-line="17471" selection-end-column="17" />
+            <state relative-caret-position="-329">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/InicioSesion.js">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="138" column="13" lean-forward="true" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="121" column="18" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/equipo.js">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1940">
-              <caret line="142" column="46" lean-forward="true" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="46" />
+            <state relative-caret-position="195">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Equipoing.php">
+        <entry file="file://$PROJECT_DIR$/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="844">
-              <caret line="157" column="65" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
+            <state relative-caret-position="2771">
+              <caret line="163" selection-start-line="163" selection-end-line="163" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/FormInicio.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/css/app.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/generic_header.php">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="12" column="93" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
+            <state relative-caret-position="-281">
+              <caret line="6177" column="10" selection-start-line="6177" selection-start-column="10" selection-end-line="6177" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -121,6 +120,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -136,6 +136,7 @@
       <find>permi</find>
       <find>biomedica</find>
       <find>softwsave</find>
+      <find>divider</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,20 +150,16 @@
         <option value="$PROJECT_DIR$/db/00_create.sql" />
         <option value="$PROJECT_DIR$/lib/ConectionDb.php" />
         <option value="$PROJECT_DIR$/js/clientes.js" />
-        <option value="$PROJECT_DIR$/include/generic_head.php" />
         <option value="$PROJECT_DIR$/js/lib/util.js" />
         <option value="$PROJECT_DIR$/js/registro.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/tipoequipo.php" />
         <option value="$PROJECT_DIR$/lib/ControllerUser.php" />
         <option value="$PROJECT_DIR$/lib/ControllerTypeEquip.php" />
         <option value="$PROJECT_DIR$/lib/ControllerPurchases.php" />
-        <option value="$PROJECT_DIR$/js/usuario.js" />
         <option value="$PROJECT_DIR$/js/equipo.js" />
         <option value="$PROJECT_DIR$/db/01_init.sql" />
         <option value="$PROJECT_DIR$/lib/Util.php" />
         <option value="$PROJECT_DIR$/lib/ControllerCustomer.php" />
-        <option value="$PROJECT_DIR$/js/tipoequipo.js" />
         <option value="$PROJECT_DIR$/js/software.js" />
         <option value="$PROJECT_DIR$/js/service.js" />
         <option value="$PROJECT_DIR$/ajax/rqst.php" />
@@ -175,18 +172,27 @@
         <option value="$PROJECT_DIR$/serviciosing.php" />
         <option value="$PROJECT_DIR$/softwareing.php" />
         <option value="$PROJECT_DIR$/tipoequipoing.php" />
-        <option value="$PROJECT_DIR$/usuario.php" />
-        <option value="$PROJECT_DIR$/include/generic_header.php" />
         <option value="$PROJECT_DIR$/js/InicioSesion.js" />
+        <option value="$PROJECT_DIR$/css/picture.css" />
+        <option value="$PROJECT_DIR$/include/generic_head.php" />
+        <option value="$PROJECT_DIR$/js/archivos/usuarioarchi.js" />
+        <option value="$PROJECT_DIR$/usuario.php" />
         <option value="$PROJECT_DIR$/include/FormInicio.php" />
+        <option value="$PROJECT_DIR$/js/tipoequipo.js" />
+        <option value="$PROJECT_DIR$/subir.php" />
+        <option value="$PROJECT_DIR$/js/usuario.js" />
+        <option value="$PROJECT_DIR$/css/global.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap/bootstrap.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/include/generic_header.php" />
       </list>
     </option>
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
+    <option name="x" value="48" />
     <option name="width" value="1318" />
-    <option name="height" value="735" />
+    <option name="height" value="687" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -203,12 +209,28 @@
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
               <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
               <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1MBiomedica" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1MBiomedica" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,15 +244,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\1MBiomedica\images" />
       <recent name="C:\xampp\htdocs\1MBiomedica" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\1MBiomedica" />
     </key>
   </component>
@@ -295,7 +319,11 @@
       <workItem from="1559105739777" duration="2177000" />
       <workItem from="1559193457805" duration="11643000" />
       <workItem from="1559334223419" duration="2092000" />
-      <workItem from="1560546954283" duration="12932000" />
+      <workItem from="1560546954283" duration="13640000" />
+      <workItem from="1560609027026" duration="4829000" />
+      <workItem from="1560624308349" duration="4844000" />
+      <workItem from="1560705999471" duration="14960000" />
+      <workItem from="1560798123877" duration="6731000" />
     </task>
     <task id="LOCAL-00001" summary="Ingreso de la plantilla">
       <created>1555122398857</created>
@@ -500,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559320942000</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Se anexaron las opciones de Actualizar los datos y de salir del inicio de sesión de una forma más sencilla. Aún falta gestionar el botón Guardar, se debe usar otra operación diferente a usrsave puesto que requiere la verificación de la contraseña actual para que se pueda editar la información sin problema">
+      <created>1560567296087</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1560567296087</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265731000" />
+    <option name="totallyTimeSpent" value="297803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,8 +553,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.20726173" />
-      <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" weight="0.30136988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.22012103" />
+      <window_info id="Structure" order="1" sideWeight="0.5040917" side_tool="true" weight="0.21633889" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -564,7 +599,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se eliminó una columna y se ingresó el usuario de prueba a la base de datos" />
     <MESSAGE value="Se agregaron los permisos al usuario prueba" />
     <MESSAGE value="iniciando con el header y agregando el logo" />
     <MESSAGE value="inicio de sesion" />
@@ -589,24 +623,10 @@
     <MESSAGE value="Lista la gestión de los equipos" />
     <MESSAGE value="lista la gestión de software" />
     <MESSAGE value="Lista la gestión de servicios y se corrigieron algunos errores en la gestión de software" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lista la gestión de servicios y se corrigieron algunos errores en la gestión de software" />
+    <MESSAGE value="Se anexaron las opciones de Actualizar los datos y de salir del inicio de sesión de una forma más sencilla. Aún falta gestionar el botón Guardar, se debe usar otra operación diferente a usrsave puesto que requiere la verificación de la contraseña actual para que se pueda editar la información sin problema" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se anexaron las opciones de Actualizar los datos y de salir del inicio de sesión de una forma más sencilla. Aún falta gestionar el botón Guardar, se debe usar otra operación diferente a usrsave puesto que requiere la verificación de la contraseña actual para que se pueda editar la información sin problema" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-bg_diagonals-medium_20_d34d17_40x40.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-bg_gloss-wave_70_ffdd57_500x100.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-icons_fadc7a_256x240.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-icons_ffe180_256x240.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-icons_eb990f_256x240.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/sunny/images/ui-icons_bd7b00_256x240.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -616,48 +636,14 @@
     <entry file="file://$PROJECT_DIR$/css/sunny/jquery-ui-1.10.2.custom.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2378" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/server/php/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/server/php/UploadHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5457" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/js/vendor/jquery.ui.widget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/server/php/index.php" />
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/server/php/UploadHandler.php" />
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/js/main.js" />
+    <entry file="file://$USER_HOME$/OneDrive/Escritorio/jQuery-File-Upload-9.23.0/js/vendor/jquery.ui.widget.js" />
     <entry file="file://$PROJECT_DIR$/js/lib/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="114" column="9" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="3504" column="1" selection-start-line="3504" selection-start-column="1" selection-end-line="3504" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -693,13 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tipoequipo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -748,9 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/app.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/01_init.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -762,13 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/generic_head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -789,27 +758,6 @@
     <entry file="file://$PROJECT_DIR$/clientes.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Equipos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/equiposgeneral.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="208" column="65" selection-start-line="208" selection-start-column="65" selection-end-line="208" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="150" column="61" selection-start-line="150" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -829,74 +777,159 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/softwareing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
+        <state relative-caret-position="2193">
           <caret line="129" column="65" selection-start-line="129" selection-start-column="65" selection-end-line="129" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/archivos/usuarioarchi.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/picture.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="296786">
           <caret line="17471" column="17" selection-start-line="17471" selection-start-column="17" selection-end-line="17471" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tipoequipoing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="174" column="25" selection-start-line="174" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="182" column="49" selection-start-line="182" selection-start-column="49" selection-end-line="182" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/generic_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="93" selection-start-line="12" selection-start-column="93" selection-end-line="12" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/equipo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1940">
-          <caret line="142" column="46" lean-forward="true" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Equipoing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="844">
-          <caret line="157" column="65" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/FormInicio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/InicioSesion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="138" column="13" lean-forward="true" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+        <state relative-caret-position="2346">
+          <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/equipo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="142" column="46" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/FormInicio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="64" column="87" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tipoequipoing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="174" column="25" selection-start-line="174" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subir.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Equipos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tipoequipo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4029">
+          <caret line="237" column="25" selection-start-line="237" selection-start-column="25" selection-end-line="237" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Equipoing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2669">
+          <caret line="157" column="65" selection-start-line="157" selection-start-column="65" selection-end-line="157" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equiposgeneral.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3536">
+          <caret line="208" column="65" selection-start-line="208" selection-start-column="65" selection-end-line="208" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/superglobals/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/usuario.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+        <state relative-caret-position="294">
+          <caret line="281" column="29" selection-start-line="281" selection-start-column="29" selection-end-line="281" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/generic_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="121" column="18" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281">
+          <caret line="6177" column="10" selection-start-line="6177" selection-start-column="10" selection-end-line="6177" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
           <folding>
-            <element signature="e#124#130#0" expanded="true" />
-            <element signature="e#130#136#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/generic_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="66" column="77" selection-start-line="66" selection-start-column="77" selection-end-line="66" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

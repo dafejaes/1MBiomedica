@@ -3951,6 +3951,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
+  padding: 10px 15px;
 }
 
 .nav > li > a > img {
@@ -3999,6 +4000,16 @@ input[type="submit"].btn.btn-mini {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #0088cc;
+}
+
+.nav li ul {
+  display:none;
+}
+
+.nav li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
 }
 
 .nav-list [class^="icon-"],
@@ -6155,4 +6166,54 @@ a.badge:focus {
 
 .affix {
   position: fixed;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+#header {
+    margin:auto;
+    width:200px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.navi > li {
+    float:left;
+}
+
+.navi li a {
+    background-color: #ebf0f5;
+    color: #184f80;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.navi li a:hover {
+    background-color: #7184aa;
+}
+
+.navi li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.navi li:hover > ul {
+    display:block;
+}
+
+.navi li ul li {
+    position:relative;
+}
+
+.navi li ul li ul {
+    right: -140px;
+    top: 0px;
 }
